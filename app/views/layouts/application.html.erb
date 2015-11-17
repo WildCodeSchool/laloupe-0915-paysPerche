@@ -9,6 +9,11 @@
 <body>
 	<p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
+  <% if user_signed_in? %>
+		<%=link_to 'Editer mon profil' %> | <%=link_to 'voir mon profil', user_path(1) %> | <%=link_to 'Se déconnecter', :destroy_user_session, :method => :delete %>
+	<%else %>
+		<%=link_to 'Connexion', :user_session %>
+	<% end %>
 
 <%= yield %>
 
