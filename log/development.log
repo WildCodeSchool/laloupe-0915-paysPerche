@@ -135,3 +135,51 @@ Processing by RailsAdmin::MainController#new as HTML
   Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_submit_buttons.html.haml (1.6ms)
   Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (52.4ms)
 Completed 200 OK in 70ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'xx@xxxx.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("first_name", "last_name", "function", "phone", "email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Syyrius"], ["last_name", "Jio"], ["function", "Administrateur"], ["phone", "009393939"], ["email", "xx@xxxx.com"], ["encrypted_password", "$2a$10$xSBKvBnIXlmOT9kGqzneJerFfJNhxWIMOMTJRIMvugrOVqtBGJWZ2"], ["is_admin", "t"], ["created_at", "2015-11-17 18:47:53.161895"], ["updated_at", "2015-11-17 18:47:53.161895"]]
+  [1m[36m (82.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'xx@xxxx.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'xx@xxxx.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+
+
+Started GET "/admin/user/new" for 127.0.0.1 at 2015-11-17 19:48:12 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"user"}
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (1.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_boolean.html.haml (3.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (1.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (1.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (1.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (1.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (1.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_submit_buttons.html.haml (7.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (74.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (7.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (11.2ms)
+Completed 200 OK in 820ms (Views: 697.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-11-17 19:48:15 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (50.2ms)
+Completed 200 OK in 73ms (Views: 59.5ms | ActiveRecord: 0.3ms)
