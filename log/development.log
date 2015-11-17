@@ -2942,3 +2942,1006 @@ Processing by UsersController#show as HTML
   Rendered users/show.html.erb within layouts/application (0.4ms)
   [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
 Completed 200 OK in 76ms (Views: 74.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:03:44 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 56ms (Views: 42.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-17 21:03:44 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-17 21:03:44 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 21:03:44 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 21:03:44 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 21:03:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 21:03:44 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 21:03:44 +0100
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:03:47 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-17 21:03:47 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-17 21:03:47 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 21:03:47 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 21:03:47 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 21:03:47 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 21:03:47 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 21:03:47 +0100
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:03:49 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:03:50 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:03:50 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:03:50 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:03:51 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-11-17 21:03:56 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8Eqnr4iw0wYhidgs1li4o7MYouKNGN81LHmvsh+pG/6YkDVb947knaa8N2arzuoFDojaHZMzHwe2e+uUQmuOSg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-17 21:03:56 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:04:06 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (8.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (6.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (3.8ms)
+Completed 200 OK in 543ms (Views: 447.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:04:13 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (2.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (5.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (1.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (1.2ms)
+Completed 200 OK in 428ms (Views: 424.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.self-315704af5a475c5948bffd72e8b91fb12a5596e4b4889c095be27bf0a3f3c5fb.css?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery.iframe-transport.self-9d6de1e3d97369f20a85456477db38a3d2b674761f4a252275201ec0272793a4.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.self-357a8f834a6b278f578acd51708542bff0852a75d8d583d0d761d3f387af5b4c.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/moment-with-locales.self-c29e385ac561ac8d380cf9a68428251c3dd6b6f0f05f6114c6ae7e8114678db8.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap-datetimepicker.self-9bf8b50ba86095fb5caaadd1ee11eaf661b3f4879f3ea5263d541e9804fd7b15.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.self-65a540a6a8e61569a39a37bd1456543ae5e5bbe48868247372bed40a1dff2bcf.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/ra.filter-box.self-7a15aaeea6101fb1e648df5848917eddd01c5c193ffae1e121224ec7e96d8647.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.self-0eadfce64f22b8e533f96e573e738fdf5af614af5729c772838b8d1383739035.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.self-29fedc7e0063905fecd8485d5a526f85b0d0c3f04de8416c2b56227e5b530528.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/ra.remote-form.self-6ee31242b35c47eae247621696152697683860be737fcb9fc7705305736c9370.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/jquery.pjax.self-aa02343d5b755c77fd76db8b2d2864cf2aebdba056b56e74b3b91f2e65207444.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/ra.i18n.self-725ab24c454e18d4832f68df96ec4fffa6190faed5636160923a6d1162a1a0ba.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.self-abecd3cd4d55ce44cbf00b87d2f612d570af5e7fe5701d05135d60f8c07e7d37.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.self-2621ced336904d375bef144d46edd9d304889e09c6559d64df325bbd10f4ce8a.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/ra.widgets.self-915816efd8a7fd5c48fd8f01ec2075ba2242662d91c164e39c1a4e44110b5761.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/ui.self-5f1671365225e7918e5bf4cb99fc38b189e81884fb859682f79a683f41ee19b7.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/custom/ui.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.self-ab9f3e5c71b96d0ca434851ecacc97b0fc3a0e8d96ab171916e9d5fdd10ef15b.js?body=1" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/assets/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2?v=4.4.0" for 127.0.0.1 at 2015-11-17 21:04:14 +0100
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-11-17 21:04:20 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (67.9ms)
+Completed 200 OK in 88ms (Views: 78.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/user/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-11-17 21:05:17 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (1.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_boolean.html.haml (2.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (1.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (15.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_submit_buttons.html.haml (3.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (91.3ms)
+Completed 200 OK in 153ms (Views: 149.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/user/new" for 127.0.0.1 at 2015-11-17 21:05:41 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FZ79QKAKHYRA/owyKI3FPCiqHE0acPBNdGVabou2MwYRXN4mNyqKhrJdvllxgE3adBlJI2uFRmiV+kFDQ1PCjQ==", "user"=>{"first_name"=>"Edem", "last_name"=>"Alomatsi", "function"=>"Empereur", "phone"=>"000000000", "is_admin"=>"0", "email"=>"edem228@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]", "remember_created_at"=>"", "sign_in_count"=>"0", "current_sign_in_at"=>"", "last_sign_in_at"=>"", "current_sign_in_ip"=>"", "last_sign_in_ip"=>""}, "return_to"=>"http://localhost:3000/admin/user", "_save"=>"", "model_name"=>"user"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'edem228@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("first_name", "last_name", "function", "phone", "is_admin", "email", "encrypted_password", "current_sign_in_ip", "last_sign_in_ip", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Edem"], ["last_name", "Alomatsi"], ["function", "Empereur"], ["phone", "000000000"], ["is_admin", "f"], ["email", "edem228@gmail.com"], ["encrypted_password", "$2a$10$MbQ.S7SfeYl2MsatKxx18.7pPF4xk8QHI5dXqFGcvtUBxG.ZIQqLK"], ["current_sign_in_ip", ""], ["last_sign_in_ip", ""], ["created_at", "2015-11-17 20:05:41.374015"], ["updated_at", "2015-11-17 20:05:41.374015"]]
+  [1m[36m (66.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/user
+Completed 302 Found in 390ms (ActiveRecord: 67.1ms)
+
+
+Started GET "/admin/user" for 127.0.0.1 at 2015-11-17 21:05:41 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (30.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (0.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (2.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (0.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (3.6ms)
+Completed 200 OK in 421ms (Views: 414.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-17 21:06:01 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 72ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-11-17 21:06:09 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vooSnE6Uc1gNgW5Xg4WmdUtvPwENS/TxgSC47PdBMJm6SDH62bTkWv8iXDzaiC6TF9xqb3y+QtRgv6PBP6TBEg==", "user"=>{"email"=>"edem228@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "edem228@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-11-17 20:06:09.296583"], ["current_sign_in_at", "2015-11-17 20:06:09.296583"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-11-17 20:06:09.297359"], ["id", 2]]
+  [1m[36m (157.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 245ms (ActiveRecord: 157.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-17 21:06:09 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:06:14 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (4.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (0.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (2.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (1.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (1.1ms)
+Completed 200 OK in 338ms (Views: 331.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:06:44 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.7ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (27.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:07:12 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Redirected to 
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.1ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (47.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-17 21:07:53 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-17 21:07:53 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 154ms (Views: 153.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:08:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:08:22 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 73ms (Views: 71.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-17 21:08:22 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 21:08:22 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 21:08:22 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-17 21:08:22 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 21:08:22 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 21:08:22 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 21:08:22 +0100
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:09:31 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 73ms (Views: 71.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-17 21:09:31 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 21:09:31 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 21:09:31 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-17 21:09:31 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 21:09:31 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 21:09:31 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 21:09:31 +0100
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:09:39 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:09:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 58ms (Views: 54.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:09:42 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:09:43 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-17 21:09:43 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-17 21:09:43 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-17 21:09:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-17 21:09:44 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-17 21:09:44 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-17 21:09:44 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-17 21:09:44 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-17 21:09:46 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:09:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2015-11-17 21:09:59 +0100
+Processing by Rails::InfoController#routes as HTML
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2015-11-17 21:10:02 +0100
+Processing by Rails::InfoController#routes as HTML
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-11-17 21:10:59 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-11-17 21:11:01 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8rp+2alq9o/gUg9ROOtCFiu0iVC73/lyk4lxWG+l0jvE8C92WRpMtWVgAoyGV0962D4g9EW41sHp+FaLg4Lc5g=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-17 21:11:01 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-17 21:11:04 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-11-17 21:11:10 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PPlX7nCEj+lO/UnQU0t+E8sIk+6+fpci9n3R2H8W3904UyBTTbAae0sF2PtohTOo1E3sHbOxPilGgGKpbqSi7g==", "user"=>{"email"=>"edem228@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "edem228@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2015-11-17 20:11:10.210092"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 2], ["updated_at", "2015-11-17 20:11:10.210951"], ["id", 2]]
+  [1m[35m (75.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 171ms (ActiveRecord: 76.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-17 21:11:10 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:11:24 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Redirected to 
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (24.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (50.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:13:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.7ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (45.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:14:34 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.2ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:14:37 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:14:38 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:14:39 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (24.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (50.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:14:40 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:14:40 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.6ms)
+
+
+Started PUT "/console/repl_sessions/cb8e946409e081456f401d3a98dff597" for 127.0.0.1 at 2015-11-17 21:14:46 +0100
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+
+
+Started PUT "/console/repl_sessions/cb8e946409e081456f401d3a98dff597" for 127.0.0.1 at 2015-11-17 21:14:52 +0100
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started PUT "/console/repl_sessions/cb8e946409e081456f401d3a98dff597" for 127.0.0.1 at 2015-11-17 21:15:03 +0100
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:17:53 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-17 21:17:55 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"users"}):
+  config/initializers/rails_admin.rb:3:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (45.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-17 21:17:59 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil} missing required keys: [:id]):
+    10: 	<p class="notice"><%= notice %></p>
+    11:   <p class="alert"><%= alert %></p>
+    12:   <% if user_signed_in? %>
+    13: 		<%=link_to 'Editer mon profil' %> | <%=link_to 'voir mon profil', user_path(params[:id]) %> | <%=link_to 'Se déconnecter', :destroy_user_session, :method => :delete %>
+    14: 	<%else %>
+    15: 		<%=link_to 'Connexion', :user_session %>
+    16: 	<% end %>
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___794666049__626936388'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (27.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (27.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (60.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-17 21:18:12 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"} missing required keys: [:id]):
+    10: 	<p class="notice"><%= notice %></p>
+    11:   <p class="alert"><%= alert %></p>
+    12:   <% if user_signed_in? %>
+    13: 		<%=link_to 'Editer mon profil' %> | <%=link_to 'voir mon profil', user_path %> | <%=link_to 'Se déconnecter', :destroy_user_session, :method => :delete %>
+    14: 	<%else %>
+    15: 		<%=link_to 'Connexion', :user_session %>
+    16: 	<% end %>
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___794666049__626862988'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-17 21:27:53 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (12.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 142ms (Views: 129.6ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/users/id" for 127.0.0.1 at 2015-11-17 21:27:56 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (30.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (9.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (65.3ms)
+
+
+Started GET "/users/id" for 127.0.0.1 at 2015-11-17 21:27:56 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (47.0ms)
