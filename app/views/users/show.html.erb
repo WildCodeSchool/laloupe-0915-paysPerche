@@ -1,2 +1,3 @@
 Bonjour et bienvenue <br>
 <%= @user.first_name %>
+<%= link_to 'nouveau contact', new_contact_path(@user.id) %>
