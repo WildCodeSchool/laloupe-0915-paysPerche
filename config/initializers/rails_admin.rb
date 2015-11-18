@@ -4,7 +4,7 @@ RailsAdmin.config do |config|
   end
   ### Popular gems integration
 
-  ## == Devise ==
+  # == Devise ==
   config.authenticate_with do
     warden.authenticate! scope: :user
   end
