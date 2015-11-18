@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Paysperche</title>
+  <title>Projet Pays Perche</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 </head>
 <body>
+	
 	<p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-  
+  <% if user_signed_in? %>
+    Connecté(e) en tant que <strong><%= current_user.email %></strong>.
+    <%= link_to 'Modifier mon profil', edit_user_registration_path  %> |
+  <% if current_user.is_admin? %>
+  <script type="text/javascript">
+		$(document).ready(function() {
+   		$('.navbar-nav > li:nth-child(2) > a:nth-child(1)').append('  Déconnexion');
+		});
+	</script>
+     <%= link_to "Admin", rails_admin_path %>
+  <%end%>
+  | <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+    <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+ 	<% end %>
 <%= yield %>
 
 </body>
