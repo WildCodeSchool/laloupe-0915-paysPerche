@@ -13,7 +13,7 @@
   <p class="alert"><%= alert %></p>
   <% if user_signed_in? %>
     Connecté(e) en tant que <strong><%= current_user.email %></strong>.
-    <%= link_to 'Modifier mon profil', edit_user_registration_path  %> |
+    <%= link_to 'Modifier mon profil', edit_user_registration_path  %>| <%= link_to 'Afficher', new_contact_path(:user_id) %> 
   <% if current_user.is_admin? %>
   <script type="text/javascript">
 		$(document).ready(function() {
