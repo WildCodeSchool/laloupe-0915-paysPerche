@@ -15802,3 +15802,308 @@ Processing by ContactsController#new as HTML
   Rendered contacts/_form.html.erb (116.3ms)
   Rendered contacts/new.html.erb within layouts/application (120.5ms)
 Completed 200 OK in 429ms (Views: 335.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 19:34:03 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (5.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 654ms (Views: 621.8ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-23 19:34:15 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (12.4ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY contacts.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (45.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (1.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (6.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (2.6ms)
+Completed 200 OK in 1790ms (Views: 1476.4ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-23 19:34:17 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY contacts.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (11.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (9.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (3.1ms)
+Completed 200 OK in 344ms (Views: 337.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-11-23 19:34:21 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (198.3ms)
+Completed 200 OK in 235ms (Views: 226.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/user/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-11-23 19:34:24 +0100
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (1.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_boolean.html.haml (21.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (1.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (20.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY contacts.id desc[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (56.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_submit_buttons.html.haml (3.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (192.3ms)
+Completed 200 OK in 231ms (Views: 221.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/rails_admin/multiselect/icon_sprite-34a30806fcba43a2effc9739cb7a370a865199a7d38bfcbc7c2474ef3ff70ded.png" for 127.0.0.1 at 2015-11-23 19:34:25 +0100
+
+
+Started PUT "/admin/user/1/edit" for 127.0.0.1 at 2015-11-23 19:34:36 +0100
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"97E85iT9nnCDnMKNAfobkBpsB+aDlNFlUynS3oh2CqZ4KEOXYnlESJn4Sgp4aUptOSCQ5ThxEtE3zWAh43kBeA==", "user"=>{"first_name"=>"Syyrius", "last_name"=>"Jio", "function"=>"Administrateur", "phone"=>"009393939", "is_admin"=>"1", "email"=>"edem228@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]", "remember_created_at"=>"", "sign_in_count"=>"7", "current_sign_in_at"=>"November 18, 2015 20:40", "last_sign_in_at"=>"November 18, 2015 20:40", "current_sign_in_ip"=>"127.0.0.1", "last_sign_in_ip"=>"127.0.0.1", "contact_ids"=>["", ""]}, "return_to"=>"http://localhost:3000/admin/user", "_save"=>"", "model_name"=>"user", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'edem228@gmail.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "email" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "edem228@gmail.com"], ["current_sign_in_at", "2015-11-18 20:40:00.000000"], ["last_sign_in_at", "2015-11-18 20:40:00.000000"], ["updated_at", "2015-11-23 18:34:36.245297"], ["id", 1]]
+  [1m[35m (67.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/user
+Completed 302 Found in 246ms (ActiveRecord: 68.7ms)
+
+
+Started GET "/admin/user" for 127.0.0.1 at 2015-11-23 19:34:36 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (126.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (1.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (4.1ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (7.3ms)
+Completed 200 OK in 761ms (Views: 753.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 19:34:43 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 113ms (Views: 111.3ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-11-23 19:34:45 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Mk23w9SrlsoZvDZH/yicTg5fxQH9hCcofwTxXSCSVfC91Miyki9M8gPYvsCGu82zLRNSAkZh5Jwb4EOiS51eLg=="}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ?  ORDER BY "contacts"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 19:34:45 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-23 19:34:47 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 86ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2015-11-23 19:34:49 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/passwords/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2015-11-23 19:34:53 +0100
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aW8CQCFWX07WFIaMXPB9+CmdCj+zCZlzivSVLy0vE6sAXhJzu5/eSdocwpsiaQdIVoJv+baYPBLcJnBfzZJMRg==", "user"=>{"email"=>"edem228@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "edem228@gmail.com"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."reset_password_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["reset_password_token", "1bfb82c41bf2213d4354f71fbc49d12459caecb3e5e82a3ca6324127d610ac27"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["reset_password_token", "1bfb82c41bf2213d4354f71fbc49d12459caecb3e5e82a3ca6324127d610ac27"], ["reset_password_sent_at", "2015-11-23 18:35:26.939822"], ["updated_at", "2015-11-23 18:35:26.940296"], ["id", 1]]
+  [1m[36m (77.6ms)[0m  [1mcommit transaction[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/mailer/reset_password_instructions.html.erb (0.9ms)
+
+Devise::Mailer#reset_password_instructions: processed outbound mail in 298.1ms
+
+Sent mail to edem228@gmail.com (312.0ms)
+Date: Mon, 23 Nov 2015 19:35:27 +0100
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: edem228@gmail.com
+Message-ID: <56535c6f6d8b7_6fcc3eba65fe15324@samanta.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello edem228@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=vsXG5Tbiq-RAYcrymeuE">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 34257ms (ActiveRecord: 78.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-23 19:35:27 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-11-23 19:36:43 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IYM6v5qq3ks7lnXs+QmCfKJv5nvg59wAvRfr4NJm4G5IsiqMAGNfTDeeMfuHkPjM3XCDveV2eWHrxQ6QMtu/gw==", "user"=>{"email"=>"edem228@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "edem228@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2015-11-23 18:37:16.480656"], ["sign_in_count", 8], ["updated_at", "2015-11-23 18:37:16.481702"], ["id", 1]]
+  [1m[36m (62.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 32633ms (ActiveRecord: 62.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 19:37:16 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 85ms (Views: 78.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-23 19:37:23 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.6ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY contacts.updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (7.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (2.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (1.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (1.0ms)
+Completed 200 OK in 325ms (Views: 307.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-11-23 19:37:24 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY contacts.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (4.8ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (0.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (2.5ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (1.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (1.2ms)
+Completed 200 OK in 355ms (Views: 351.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-11-23 19:37:26 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (102.6ms)
+Completed 200 OK in 124ms (Views: 112.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/user/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-11-23 19:37:29 +0100
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_boolean.html.haml (0.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (2.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_datetime.html.haml (0.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.7ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"  ORDER BY contacts.id desc[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (6.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_submit_buttons.html.haml (1.3ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (65.7ms)
+Completed 200 OK in 91ms (Views: 80.7ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/admin/user/1/edit" for 127.0.0.1 at 2015-11-23 19:38:03 +0100
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"npAHnEWLciApEjhrJUFxTgEy8yQz9N5erC+TkCHxW0OZJsKKAgMv96yaV2rCT1v++kq1enW1t3FuAksUxBD9gg==", "user"=>{"first_name"=>"Syyrius", "last_name"=>"Jio", "function"=>"Administrateur", "phone"=>"009393939", "is_admin"=>"1", "email"=>"xx@xxxx.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]", "remember_created_at"=>"", "sign_in_count"=>"8", "current_sign_in_at"=>"November 23, 2015 18:37", "last_sign_in_at"=>"November 18, 2015 20:40", "current_sign_in_ip"=>"127.0.0.1", "last_sign_in_ip"=>"127.0.0.1", "contact_ids"=>["", ""]}, "return_to"=>"http://localhost:3000/admin/user", "_save"=>"", "model_name"=>"user", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."user_id" = ?  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'xx@xxxx.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "email" = ?, "reset_password_sent_at" = ?, "current_sign_in_at" = ?, "reset_password_token" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "xx@xxxx.com"], ["reset_password_sent_at", nil], ["current_sign_in_at", "2015-11-23 18:37:00.000000"], ["reset_password_token", nil], ["updated_at", "2015-11-23 18:38:03.578061"], ["id", 1]]
+  [1m[35m (173.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/user
+Completed 302 Found in 196ms (ActiveRecord: 174.8ms)
+
+
+Started GET "/admin/user" for 127.0.0.1 at 2015-11-23 19:38:03 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"user"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (91.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (0.6ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (2.4ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (1.9ms)
+  Rendered /home/hacknook/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (5.7ms)
+Completed 200 OK in 458ms (Views: 452.7ms | ActiveRecord: 1.8ms)
