@@ -9,14 +9,18 @@ class ContactsController < ApplicationController
 	end
 
 	def new
+		o = [('a'..'z'), ('A'..'Z')].map { |i| i.to_a }.flatten
+		@mdp = (0...8).map { o[rand(o.length)] }.join
 		@contact = Contact.new
 	end
 
 	def edit
 		@contact = Contact.find(params[:id])
 	end
+	
 	def create
-		@contact = Contact.new(contact_params)
+		binding.pry
+		@contact = current_user.contacts.build(contact_params)
 		if @contact.save
 			redirect_to root_path
 		else
@@ -35,6 +39,6 @@ class ContactsController < ApplicationController
 
 	private
 	def contact_params
-		params.require(:contact).permit(:first_name, :last_name, :function, :phone, :email, :password, :note)
+		params.require(:contact).permit(:first_name, :last_name, :function, :phone, :email, :password, :note, :user_id)
 	end
 end

@@ -5,7 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 </head>
 <body>
 	
@@ -13,13 +12,9 @@
   <p class="alert"><%= alert %></p>
   <% if user_signed_in? %>
     Connecté(e) en tant que <strong><%= current_user.email %></strong>.
-    <%= link_to 'Modifier mon profil', edit_user_registration_path  %>| <%= link_to 'Afficher', new_contact_path(:user_id) %> 
+    <%= link_to 'Modifier mon profil',  edit_user_path(current_user.id)  %>| <%= link_to 'Afficher', new_contact_path(:user_id) %> 
+    <%= link_to 'Formulaire', new_contact_path(current_user.id) %>
   <% if current_user.is_admin? %>
-  <script type="text/javascript">
-		$(document).ready(function() {
-   		$('.navbar-nav > li:nth-child(2) > a:nth-child(1)').append('  Déconnexion');
-		});
-	</script>
      <%= link_to "Admin", rails_admin_path %>
   <%end%>
   | <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
