@@ -9,6 +9,7 @@ class ContactsController < ApplicationController
 	end
 
 	def new
+		@user = User.find(params[:id])
 		@contact = Contact.new
 	end
 
@@ -16,6 +17,7 @@ class ContactsController < ApplicationController
 		@contact = Contact.find(params[:id])
 	end
 	def create
+		binding.pry
 		@contact = Contact.new(contact_params)
 		if @contact.save
 			redirect_to root_path

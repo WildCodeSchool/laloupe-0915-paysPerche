@@ -11,5 +11,6 @@
 	<%= f.email_field :email %><br><br>
 	<%= f.label 'Mot de passe' %>
 	<%= f.password_field :password %><br><br>
+	<%= f.hidden_field :user_id, :value => params[:id] %>
 	<%= f.submit 'Envoyer' %>
 <% end %>

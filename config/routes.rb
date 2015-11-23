@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :users
-  get '/users/:id/contact/new' => 'contacts#new', as: :new_contact
+  get '/users/:id/contacts/new' => 'contacts#new', as: :new_contact
   resources :contacts
-
+  post '/users/:id/contacts/new' => 'contacts#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
