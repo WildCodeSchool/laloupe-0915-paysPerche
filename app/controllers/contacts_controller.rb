@@ -9,6 +9,8 @@ class ContactsController < ApplicationController
 	end
 
 	def new
+		o = [('a'..'z'), ('A'..'Z')].map { |i| i.to_a }.flatten
+		@string = (0...8).map { o[rand(o.length)] }.join
 		@user = User.find(params[:id])
 		@contact = Contact.new
 	end
@@ -17,8 +19,7 @@ class ContactsController < ApplicationController
 		@contact = Contact.find(params[:id])
 	end
 	def create
-		binding.pry
-		@contact = Contact.new(contact_params)
+		@contact = Contact.new(contact_params, :password => '#{@string}')
 		if @contact.save
 			redirect_to root_path
 		else
