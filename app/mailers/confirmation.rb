@@ -6,10 +6,10 @@ class Confirmation < ApplicationMailer
   #   en.confirmation.new_confirm.subject
   #
   def new_confirm
-  	@confirm = confirm
-  	@item = @confirm.item
   	@greeting = "Bonjour"
-   
-    mail to: "@item.contact.email", subject: "Vos accés à la plateforme du Pays Perche"
+    @contact = Contact.last
+    @email = @contact.email
+
+    mail to: "#{@email}", subject: "Vos accés à la plateforme du Pays Perche"
   end
 end
