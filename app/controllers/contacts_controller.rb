@@ -21,8 +21,8 @@ class ContactsController < ApplicationController
 	def create
 		@contact = Contact.new(contact_params, :password => '#{@string}')
 		if @contact.save
+			ContactMailer.deliver_new_register(@contact)
 			redirect_to root_path
-			ContactMailer.new_register(@contact).deliver_now
 		else
 			render 'new'
 		end
