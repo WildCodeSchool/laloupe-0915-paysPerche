@@ -1,3 +1,6 @@
 Bonjour et bienvenue <br>
+
+<%= image_tag @qr %>
+
 <%= @user.first_name %>
 <%= link_to 'nouveau contact', new_contact_path(@user.id) %>

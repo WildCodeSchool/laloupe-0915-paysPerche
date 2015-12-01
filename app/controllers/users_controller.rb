@@ -5,7 +5,9 @@ class UsersController < ApplicationController
 	end
 
 	def show
+		url = url_for( :controller => 'contacts', :action => 'new' )
 		@user = current_user
+		@qr = RQRCode::QRCode.new(url).to_img.resize(200, 200).to_data_url
 	end
 
 	def edit

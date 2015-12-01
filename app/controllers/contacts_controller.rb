@@ -13,6 +13,7 @@ class ContactsController < ApplicationController
 		@string = (0...8).map { o[rand(o.length)] }.join
 		@user = User.find(params[:id])
 		@contact = Contact.new
+		@qr = RQRCode::QRCode.new(request.original_url).to_img.resize(200, 200).to_data_url
 	end
 
 	def edit
