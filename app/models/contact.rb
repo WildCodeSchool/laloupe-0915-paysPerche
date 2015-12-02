@@ -7,7 +7,13 @@ class Contact < ActiveRecord::Base
 
   after_create :notify_by_email
 
+  def generate_password
+    o = [('a'..'z'), ('A'..'Z')].map { |i| i.to_a }.flatten
+    self.password = (0...8).map { o[rand(o.length)] }.join
+  end
+
   private
+
   def notify_by_email
     ContactMailer.new_register(self).deliver_now
   end
