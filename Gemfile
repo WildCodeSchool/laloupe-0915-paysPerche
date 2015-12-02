@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem 'dotenv-rails', :groups => [:development, :test]
 gem 'fastercsv' # Only required on Ruby 1.8 and below
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'devise'
@@ -38,6 +37,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'pry'
+  gem 'dotenv-rails'
 end
 
 group :development do
