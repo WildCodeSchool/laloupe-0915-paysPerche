@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20151118103944) do
 
   add_index "contacts", ["email"], name: "index_contacts_on_email", unique: true
   add_index "contacts", ["reset_password_token"], name: "index_contacts_on_reset_password_token", unique: true
+  add_index "contacts", ["user_id"], name: "index_contacts_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
