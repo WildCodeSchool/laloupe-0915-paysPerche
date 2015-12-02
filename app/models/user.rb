@@ -7,6 +7,32 @@ class User < ActiveRecord::Base
          
    after_create :notify_by_email
 
+   rails_admin do
+   list do
+       field :first_name
+       field :last_name
+       field :email
+       field :function
+   end
+   edit do
+       field :email
+       field :password
+       field :password_confirmation
+       field :first_name
+       field :last_name
+       field :phone
+   end
+
+   show do
+       field :first_name
+       field :last_name
+       field :email
+       field :function
+       field :contacts
+
+   end
+ end
+
   private
   def notify_by_email
     ContactMailer.new_register(self).deliver_now
