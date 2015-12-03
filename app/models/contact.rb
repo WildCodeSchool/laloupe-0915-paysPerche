@@ -6,6 +6,34 @@ class Contact < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   after_create :notify_by_email
+  rails_admin do
+   list do
+       field :first_name
+       field :last_name
+       field :email
+       field :function
+   end
+   edit do
+       field :first_name
+       field :last_name
+       field :email
+       field :phone
+       field :users
+       field :password
+       field :password_confirmation
+   end
+
+   show do
+       field :first_name
+       field :last_name
+       field :email
+       field :function
+       field :users
+
+   end
+ end
+
+
 
   def generate_password
     o = [('a'..'z'), ('A'..'Z')].map { |i| i.to_a }.flatten
