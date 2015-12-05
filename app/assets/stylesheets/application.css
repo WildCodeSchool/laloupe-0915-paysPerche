@@ -80,3 +80,9 @@ button, html input[type=button], input[type=reset], input[type=submit]  {
 .actions{
 	text-align: center;
 }
+input, input:focus{
+	border: 0;
+	-moz-border: 0;
+	-o-border: 0;
+	-webkit-border: 0;
+}
