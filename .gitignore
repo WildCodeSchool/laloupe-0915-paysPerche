@@ -9,6 +9,7 @@ capybara-*.html
 /coverage/
 /spec/tmp
 .env
+
 **.orig
 rerun.txt
 pickle-email-*.html
@@ -34,3 +35,5 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+#test
