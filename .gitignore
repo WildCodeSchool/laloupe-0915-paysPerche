@@ -3,12 +3,14 @@ capybara-*.html
 .rspec
 /log
 /tmp
+log/development.log
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /public/system
 /coverage/
 /spec/tmp
 .env
+
 **.orig
 rerun.txt
 pickle-email-*.html
@@ -34,3 +36,5 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+#test

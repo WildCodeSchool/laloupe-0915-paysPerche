@@ -13,11 +13,11 @@
  *= require_tree .
  *= require_bootstrap.min
  *= require_self
+ *= require font-awesome
  */
 
 body {
 	background-color: #255804;
-	text-align: center;
 	color: black;
 }
 
@@ -30,7 +30,9 @@ body {
 	font-size: 50px;
 }
 .field {
-	margin: 50px;
+	background-color: #fff;
+  width: 75%;
+  margin: 30px auto;
 }
 .bordure {
 	background-color: white;
@@ -57,7 +59,7 @@ a {
 }
 button, html input[type=button], input[type=reset], input[type=submit]  {
 	border-radius:70px;
-	border:5px solid #f2edf2;
+	/*border:5px solid #f2edf2;*/
 	height: 200px;
 	display:inline-block;
 	cursor:pointer;
@@ -70,4 +72,17 @@ button, html input[type=button], input[type=reset], input[type=submit]  {
 	position:relative;
 	top:1px;
 
+}
+.field .fa{
+	color: #255804;
+	padding: 0 10px;
+}
+.actions{
+	text-align: center;
+}
+input, input:focus{
+	border: 0;
+	-moz-border: 0;
+	-o-border: 0;
+	-webkit-border: 0;
 }
