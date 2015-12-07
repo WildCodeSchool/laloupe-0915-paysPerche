@@ -17,7 +17,7 @@
  */
 
 body {
-	background-color: #255804;
+	background-color: #4BA90F;
 	color: black;
 }
 
@@ -74,7 +74,7 @@ button, html input[type=button], input[type=reset], input[type=submit]  {
 
 }
 .field .fa{
-	color: #255804;
+	color: #4BA90F;
 	padding: 0 10px;
 }
 .actions{
@@ -85,4 +85,11 @@ input, input:focus{
 	-moz-border: 0;
 	-o-border: 0;
 	-webkit-border: 0;
+}
+input[type=submit]{
+	border:5px solid #f2edf2;
+}
+.new_contact input{
+	width: 75%;
+	color: #fff;
 }
