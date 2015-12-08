@@ -29,6 +29,7 @@ class Contact < ActiveRecord::Base
        field :email
        field :function
        field :users
+        
 
    end
  end
