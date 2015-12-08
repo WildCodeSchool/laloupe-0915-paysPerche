@@ -7,7 +7,12 @@ class ApplicationController < ActionController::Base
 
 
   #custom devise permited params
-  before_filter :configure_devise_permitted_parameters, if: :devise_controller?
+  before_filter :set_locale, :configure_devise_permitted_parameters, if: :devise_controller?
+
+  def set_locale
+    I18n.locale = params[:fr]
+  end
+
   protected
   def configure_devise_permitted_parameters
     permitted_params = [:email, :password, :password_confirmation, :first_name, :last_name, :function, :phone]
