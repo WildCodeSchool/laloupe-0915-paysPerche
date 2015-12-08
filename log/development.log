@@ -12227,3 +12227,984 @@ Started GET "/assets/application.self-ac2c6dff2db1fd58bdc6450463ce11df0e5baca0fd
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 11:34:00 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-08 09:51:52 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1262ms (Views: 1222.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-08 09:51:54 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 140ms (Views: 138.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e5baf0e99881dab0cdad8f305519212f5e65b8ca1565c3ea8d70004f7fa18634.css?body=1" for 127.0.0.1 at 2015-12-08 09:51:54 +0100
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-12-08 09:51:57 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (153.3ms)
+Completed 200 OK in 357ms (Views: 334.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-12-08 09:52:15 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0F47GvGx7aD3qNYQ07jC+J1HUmp28m1aKQKGoAHcfPW4C2/Mo3fLz7wjapnVkqeKq43NE+NU5qC/6NZpMCU4hQ==", "user"=>{"email"=>"xx@xxxx.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "xx@xxxx.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-12-07 10:47:50.965629"], ["current_sign_in_at", "2015-12-08 08:52:15.312720"], ["sign_in_count", 3], ["updated_at", "2015-12-08 08:52:15.314362"], ["id", 2]]
+  [1m[36m (137.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 469ms (ActiveRecord: 137.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-08 09:52:15 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 127ms (Views: 126.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-12-08 09:52:23 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY contacts.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (31.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (13.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (4.7ms)
+Completed 200 OK in 7341ms (Views: 6982.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/contact?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 09:52:34 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"contact"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY contacts.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (96.5ms)
+Completed 200 OK in 197ms (Views: 183.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/contact/1/delete?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 09:52:40 +0100
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"contact", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mContact Load (0.4ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ?  ORDER BY "contacts"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_delete_notice.html.haml (4.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (12.1ms)
+Completed 200 OK in 38ms (Views: 24.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/admin/contact/1/delete" for 127.0.0.1 at 2015-12-08 09:52:44 +0100
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tqVCA3bVWCmRacPDdb0z832C1uc5APv5NctQ4thJ1erG4m158PGIUpPlmFYUuv3RSoFRcl2Sinm7mtb4HScHGg==", "return_to"=>"http://localhost:3000/admin/contact", "_continue"=>"", "model_name"=>"contact", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ?  ORDER BY "contacts"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/admin/contact
+Filter chain halted as :check_for_cancel rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/contact" for 127.0.0.1 at 2015-12-08 09:52:44 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"contact"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mContact Load (0.3ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY contacts.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (18.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (5.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (5.3ms)
+Completed 200 OK in 413ms (Views: 404.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/contact/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 09:52:46 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"contact"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (1.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"  ORDER BY users.id desc
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (121.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_submit_buttons.html.haml (5.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (157.9ms)
+Completed 200 OK in 180ms (Views: 168.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/rails_admin/multiselect/icon_sprite-34a30806fcba43a2effc9739cb7a370a865199a7d38bfcbc7c2474ef3ff70ded.png" for 127.0.0.1 at 2015-12-08 09:52:46 +0100
+
+
+Started POST "/admin/contact/new" for 127.0.0.1 at 2015-12-08 09:53:24 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C19cL7BGjK+mt6f5xEReQ53O0rwkTXeiB+mP7QEI6I57GHNVNmJc1KQ7/GylQ5Bhqs1VKUDfBiKJuAn3xGY6fg==", "contact"=>{"first_name"=>"blzblz", "last_name"=>"blablablba", "email"=>"blabla@gmail.com", "phone"=>"000000009", "user_ids"=>["", "", "7"], "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/admin/contact", "_save"=>"", "model_name"=>"contact"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.3ms)[0m  SELECT  1 AS one FROM "contacts" WHERE "contacts"."email" = 'blabla@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("first_name", "last_name", "email", "phone", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "blzblz"], ["last_name", "blablablba"], ["email", "blabla@gmail.com"], ["phone", "000000009"], ["encrypted_password", "$2a$10$mVdvtyN9SbaCcF2zBY6FUuXZ.tk2hyf/owEgDNI.e8BK5puuLIVjS"], ["created_at", "2015-12-08 08:53:24.322227"], ["updated_at", "2015-12-08 08:53:24.322227"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contacts_users" ("user_id", "contact_id") VALUES (?, ?)  [["user_id", 7], ["contact_id", 2]]
+  Rendered contact_mailer/new_register.html.erb within layouts/mailer (0.6ms)
+  Rendered contact_mailer/new_register.text.erb within layouts/mailer (0.3ms)
+
+ContactMailer#new_register: processed outbound mail in 293.7ms
+
+Sent mail to blabla@gmail.com (19.7ms)
+Date: Tue, 08 Dec 2015 09:53:24 +0100
+From: from@example.com
+To: blabla@gmail.com
+Message-ID: <56669a84a9afb_f7122e3b1c9055@apprenti-ThinkPad-T410.mail>
+Subject: =?UTF-8?Q?Vos_acc=C3=A9s_=C3=A0_la_plateforme_du_Pays_Perche?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56669a84a5a2e_f7122e3b1c9045f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56669a84a5a2e_f7122e3b1c9045f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ContactMailer#new_register
+
+Hi, find me in app/views/contact_mailer/new_register.text.erb
+
+
+----==_mimepart_56669a84a5a2e_f7122e3b1c9045f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+  <body>
+    <h1>Vos acc=C3=A8s =C3=A0 la plate-forme du pays perche</h1>
+
+<p>
+  Hi, find me in app/views/contact_mailer/new_register.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_56669a84a5a2e_f7122e3b1c9045f--
+
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 677ms (ActiveRecord: 1.8ms)
+
+SocketError (getaddrinfo: Name or service not known):
+  app/models/contact.rb:46:in `notify_by_email'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002afd780 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002afd348 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002ae32e0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/admin/contact/new" for 127.0.0.1 at 2015-12-08 09:54:44 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C19cL7BGjK+mt6f5xEReQ53O0rwkTXeiB+mP7QEI6I57GHNVNmJc1KQ7/GylQ5Bhqs1VKUDfBiKJuAn3xGY6fg==", "contact"=>{"first_name"=>"blzblz", "last_name"=>"blablablba", "email"=>"blabla@gmail.com", "phone"=>"000000009", "user_ids"=>["", "", "7"], "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/admin/contact", "_save"=>"", "model_name"=>"contact"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mContact Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "contacts" WHERE "contacts"."email" = 'blabla@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("first_name", "last_name", "email", "phone", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["first_name", "blzblz"], ["last_name", "blablablba"], ["email", "blabla@gmail.com"], ["phone", "000000009"], ["encrypted_password", "$2a$10$/XU2gfPclOv7Zg7ZoxwnG.SjGn.k6kJZ0kqgPzOhvF4BJ5BLF6H3C"], ["created_at", "2015-12-08 08:54:44.901943"], ["updated_at", "2015-12-08 08:54:44.901943"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contacts_users" ("user_id", "contact_id") VALUES (?, ?)[0m  [["user_id", 7], ["contact_id", 2]]
+  Rendered contact_mailer/new_register.html.erb within layouts/mailer (0.1ms)
+  Rendered contact_mailer/new_register.text.erb within layouts/mailer (0.0ms)
+
+ContactMailer#new_register: processed outbound mail in 13.7ms
+
+Sent mail to blabla@gmail.com (5.7ms)
+Date: Tue, 08 Dec 2015 09:54:44 +0100
+From: from@example.com
+To: blabla@gmail.com
+Message-ID: <56669ad4e0b9f_f713fa8d4ad043c9074d@apprenti-ThinkPad-T410.mail>
+Subject: =?UTF-8?Q?Vos_acc=C3=A9s_=C3=A0_la_plateforme_du_Pays_Perche?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56669ad4df771_f713fa8d4ad043c9067c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56669ad4df771_f713fa8d4ad043c9067c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ContactMailer#new_register
+
+Hi, find me in app/views/contact_mailer/new_register.text.erb
+
+
+----==_mimepart_56669ad4df771_f713fa8d4ad043c9067c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+  <body>
+    <h1>Vos acc=C3=A8s =C3=A0 la plate-forme du pays perche</h1>
+
+<p>
+  Hi, find me in app/views/contact_mailer/new_register.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_56669ad4df771_f713fa8d4ad043c9067c--
+
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 1.2ms)
+
+SocketError (getaddrinfo: Name or service not known):
+  app/models/contact.rb:46:in `notify_by_email'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.9ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002afd780 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002afd348 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002ae32e0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/admin/contact/new" for 127.0.0.1 at 2015-12-08 10:09:33 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C19cL7BGjK+mt6f5xEReQ53O0rwkTXeiB+mP7QEI6I57GHNVNmJc1KQ7/GylQ5Bhqs1VKUDfBiKJuAn3xGY6fg==", "contact"=>{"first_name"=>"blzblz", "last_name"=>"blablablba", "email"=>"blabla@gmail.com", "phone"=>"000000009", "user_ids"=>["", "", "7"], "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/admin/contact", "_save"=>"", "model_name"=>"contact"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.3ms)[0m  SELECT  1 AS one FROM "contacts" WHERE "contacts"."email" = 'blabla@gmail.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts" ("first_name", "last_name", "email", "phone", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "blzblz"], ["last_name", "blablablba"], ["email", "blabla@gmail.com"], ["phone", "000000009"], ["encrypted_password", "$2a$10$sG.uLvNLObQIMVQ4wBdes..v4gbE2/.Qcsy.SoztjAdDwuN8saxCS"], ["created_at", "2015-12-08 09:09:33.523735"], ["updated_at", "2015-12-08 09:09:33.523735"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contacts_users" ("user_id", "contact_id") VALUES (?, ?)  [["user_id", 7], ["contact_id", 2]]
+  Rendered contact_mailer/new_register.html.erb within layouts/mailer (0.1ms)
+  Rendered contact_mailer/new_register.text.erb within layouts/mailer (0.1ms)
+
+ContactMailer#new_register: processed outbound mail in 16.0ms
+
+Sent mail to blabla@gmail.com (30008.0ms)
+Date: Tue, 08 Dec 2015 10:09:33 +0100
+From: from@example.com
+To: blabla@gmail.com
+Message-ID: <56669e4d8520b_f713fa8d52bb94490925@apprenti-ThinkPad-T410.mail>
+Subject: =?UTF-8?Q?Vos_acc=C3=A9s_=C3=A0_la_plateforme_du_Pays_Perche?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56669e4d838f1_f713fa8d52bb944908ca";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56669e4d838f1_f713fa8d52bb944908ca
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ContactMailer#new_register
+
+Hi, find me in app/views/contact_mailer/new_register.text.erb
+
+
+----==_mimepart_56669e4d838f1_f713fa8d52bb944908ca
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+  <body>
+    <h1>Vos acc=C3=A8s =C3=A0 la plate-forme du pays perche</h1>
+
+<p>
+  Hi, find me in app/views/contact_mailer/new_register.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_56669e4d838f1_f713fa8d52bb944908ca--
+
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 30134ms (ActiveRecord: 1.8ms)
+
+Net::OpenTimeout (execution expired):
+  app/models/contact.rb:46:in `notify_by_email'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002afd780 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002afd348 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002ae32e0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/admin/contact/new" for 127.0.0.1 at 2015-12-08 10:10:11 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"contact"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY users.id desc[0m
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (6.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_submit_buttons.html.haml (1.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (28.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (4.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (6.4ms)
+Completed 200 OK in 421ms (Views: 413.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/contact/new" for 127.0.0.1 at 2015-12-08 10:10:40 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ei+zntkgUYJamiKdH2RIfTAUKL7dPZENwxhOj9E2eBkKaJzkXwSB+VgWeQh+Y4ZfBxevK7mv4I1NSciVFFiq6Q==", "contact"=>{"first_name"=>"blzblz", "last_name"=>"blablablba", "email"=>"blabla@gmail.com", "phone"=>"000000009", "user_ids"=>["", "", "7"], "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/admin/contact/1/delete", "_save"=>"", "model_name"=>"contact"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mContact Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "contacts" WHERE "contacts"."email" = 'blabla@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("first_name", "last_name", "email", "phone", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["first_name", "blzblz"], ["last_name", "blablablba"], ["email", "blabla@gmail.com"], ["phone", "000000009"], ["encrypted_password", "$2a$10$QcIiZiZfxML1An50pSrTJe4GNZnVEQvgjoQwNbxTk3RTy6v4P77fG"], ["created_at", "2015-12-08 09:10:40.777008"], ["updated_at", "2015-12-08 09:10:40.777008"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contacts_users" ("user_id", "contact_id") VALUES (?, ?)[0m  [["user_id", 7], ["contact_id", 2]]
+  Rendered contact_mailer/new_register.html.erb within layouts/mailer (0.1ms)
+  Rendered contact_mailer/new_register.text.erb within layouts/mailer (0.1ms)
+
+ContactMailer#new_register: processed outbound mail in 16.7ms
+
+Sent mail to blabla@gmail.com (30022.9ms)
+Date: Tue, 08 Dec 2015 10:10:40 +0100
+From: from@example.com
+To: blabla@gmail.com
+Message-ID: <56669e90c2ff5_f713fa8d52bb944911bb@apprenti-ThinkPad-T410.mail>
+Subject: =?UTF-8?Q?Vos_acc=C3=A9s_=C3=A0_la_plateforme_du_Pays_Perche?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56669e90c15fd_f713fa8d52bb944910b9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56669e90c15fd_f713fa8d52bb944910b9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ContactMailer#new_register
+
+Hi, find me in app/views/contact_mailer/new_register.text.erb
+
+
+----==_mimepart_56669e90c15fd_f713fa8d52bb944910b9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+  <body>
+    <h1>Vos acc=C3=A8s =C3=A0 la plate-forme du pays perche</h1>
+
+<p>
+  Hi, find me in app/views/contact_mailer/new_register.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_56669e90c15fd_f713fa8d52bb944910b9--
+
+  [1m[35m (0.4ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 30149ms (ActiveRecord: 1.3ms)
+
+Net::OpenTimeout (execution expired):
+  app/models/contact.rb:46:in `notify_by_email'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.7ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002afd780 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002afd348 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002ae32e0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-08 10:14:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 352ms (Views: 336.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-08 10:14:20 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 140ms (Views: 139.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-08 10:14:24 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 114ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-12-08 10:14:27 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-12-08 10:14:27 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 228ms (Views: 188.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-12-08 10:14:41 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y+RCqygYBeX528h0ayzRwbu5Vf3+GfQlxvs3pWXj+DideVtKCYL9bXfeYPeMD8ZiSNuSWW4ULxO4FHHxVvueyQ==", "user"=>{"email"=>"xx@xxxx.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "xx@xxxx.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-12-08 08:52:15.312720"], ["current_sign_in_at", "2015-12-08 09:14:41.761849"], ["sign_in_count", 4], ["updated_at", "2015-12-08 09:14:41.763565"], ["id", 2]]
+  [1m[36m (143.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/
+Completed 302 Found in 274ms (ActiveRecord: 144.4ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2015-12-08 10:14:41 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY contacts.updated_at desc LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (16.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (9.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (4.8ms)
+Completed 200 OK in 708ms (Views: 521.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/contact?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 10:14:49 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"contact"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mContact Load (0.5ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY contacts.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (41.6ms)
+Completed 200 OK in 70ms (Views: 51.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/contact?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 10:14:52 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"contact"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY contacts.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (20.5ms)
+Completed 200 OK in 41ms (Views: 28.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/contact/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 10:14:58 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"contact"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (1.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY users.id desc[0m
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (36.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_submit_buttons.html.haml (5.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (72.3ms)
+Completed 200 OK in 93ms (Views: 82.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/admin/contact/new" for 127.0.0.1 at 2015-12-08 10:15:26 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wvXn/wUYYYDQQ853ptkFEPjOUlW6/jozzDZdWjorSLAI/F5OctBZJJDsoVSs7wqioFKa0shpzgKvRBnWaBz4bA==", "contact"=>{"first_name"=>"blzblz", "last_name"=>"blablablba", "email"=>"blabla@gmail.com", "phone"=>"000000009", "user_ids"=>["", "", "5"], "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/admin/contact", "_save"=>"", "model_name"=>"contact"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mContact Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "contacts" WHERE "contacts"."email" = 'blabla@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contacts" ("first_name", "last_name", "email", "phone", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["first_name", "blzblz"], ["last_name", "blablablba"], ["email", "blabla@gmail.com"], ["phone", "000000009"], ["encrypted_password", "$2a$10$qI6h64EaH.eFlPFrSSppqOBkiLH5Ql.8n2i4UGtwrWJ6ZRSA6qF7i"], ["created_at", "2015-12-08 09:15:26.495264"], ["updated_at", "2015-12-08 09:15:26.495264"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contacts_users" ("user_id", "contact_id") VALUES (?, ?)[0m  [["user_id", 5], ["contact_id", 2]]
+  Rendered contact_mailer/new_register.html.erb within layouts/mailer (0.6ms)
+  Rendered contact_mailer/new_register.text.erb within layouts/mailer (0.3ms)
+
+ContactMailer#new_register: processed outbound mail in 321.2ms
+
+Sent mail to blabla@gmail.com (75.2ms)
+Date: Tue, 08 Dec 2015 10:15:26 +0100
+From: from@example.com
+To: blabla@gmail.com
+Message-ID: <56669faecec75_13f53825084836c6@apprenti-ThinkPad-T410.mail>
+Subject: =?UTF-8?Q?Vos_acc=C3=A9s_=C3=A0_la_plateforme_du_Pays_Perche?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56669faeca4a8_13f5382508483566";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56669faeca4a8_13f5382508483566
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ContactMailer#new_register
+
+Hi, find me in app/views/contact_mailer/new_register.text.erb
+
+
+----==_mimepart_56669faeca4a8_13f5382508483566
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+  <body>
+    <h1>Vos acc=C3=A8s =C3=A0 la plate-forme du pays perche</h1>
+
+<p>
+  Hi, find me in app/views/contact_mailer/new_register.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_56669faeca4a8_13f5382508483566--
+
+  [1m[35m (0.3ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 544ms (ActiveRecord: 2.0ms)
+
+Errno::ENETUNREACH (Network is unreachable - connect(2) for "smtp.gmail.com" port 587):
+  app/models/contact.rb:46:in `notify_by_email'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000003ba6988 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000003ba6690 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000003ba26a8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/admin/contact/new" for 127.0.0.1 at 2015-12-08 10:17:35 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wvXn/wUYYYDQQ853ptkFEPjOUlW6/jozzDZdWjorSLAI/F5OctBZJJDsoVSs7wqioFKa0shpzgKvRBnWaBz4bA==", "contact"=>{"first_name"=>"blzblz", "last_name"=>"blablablba", "email"=>"blabla@gmail.com", "phone"=>"000000009", "user_ids"=>["", "", "5"], "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "return_to"=>"http://localhost:3000/admin/contact", "_save"=>"", "model_name"=>"contact"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.2ms)[0m  SELECT  1 AS one FROM "contacts" WHERE "contacts"."email" = 'blabla@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("first_name", "last_name", "email", "phone", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "blzblz"], ["last_name", "blablablba"], ["email", "blabla@gmail.com"], ["phone", "000000009"], ["encrypted_password", "$2a$10$mROnwSy43KWILTKHLMAMduoPpDOLDRhvDwAiAK5ehsivQ1xk1HyGG"], ["created_at", "2015-12-08 09:17:35.513716"], ["updated_at", "2015-12-08 09:17:35.513716"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contacts_users" ("user_id", "contact_id") VALUES (?, ?)  [["user_id", 5], ["contact_id", 2]]
+  Rendered contact_mailer/new_register.html.erb within layouts/mailer (0.1ms)
+  Rendered contact_mailer/new_register.text.erb within layouts/mailer (0.1ms)
+
+ContactMailer#new_register: processed outbound mail in 14.8ms
+
+Sent mail to blabla@gmail.com (2732.7ms)
+Date: Tue, 08 Dec 2015 10:17:35 +0100
+From: from@example.com
+To: blabla@gmail.com
+Message-ID: <5666a02f82f38_13f53fcc7bab244483865@apprenti-ThinkPad-T410.mail>
+Subject: =?UTF-8?Q?Vos_acc=C3=A9s_=C3=A0_la_plateforme_du_Pays_Perche?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5666a02f811ae_13f53fcc7bab2444837c6";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5666a02f811ae_13f53fcc7bab2444837c6
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ContactMailer#new_register
+
+Hi, find me in app/views/contact_mailer/new_register.text.erb
+
+
+----==_mimepart_5666a02f811ae_13f53fcc7bab2444837c6
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+  <body>
+    <h1>Vos acc=C3=A8s =C3=A0 la plate-forme du pays perche</h1>
+
+<p>
+  Hi, find me in app/views/contact_mailer/new_register.html.erb
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_5666a02f811ae_13f53fcc7bab2444837c6--
+
+  [1m[36m (174.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/contact
+Completed 302 Found in 3035ms (ActiveRecord: 175.1ms)
+
+
+Started GET "/admin/contact" for 127.0.0.1 at 2015-12-08 10:17:38 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"contact"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY contacts.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (28.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (5.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (5.4ms)
+Completed 200 OK in 474ms (Views: 462.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.self-189d98609bff097a397443feff182ddca2570fb44fc1cd21aca5ed6ff607014b.css?body=1" for 127.0.0.1 at 2015-12-08 10:17:38 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery.iframe-transport.self-9d6de1e3d97369f20a85456477db38a3d2b674761f4a252275201ec0272793a4.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.self-357a8f834a6b278f578acd51708542bff0852a75d8d583d0d761d3f387af5b4c.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/moment-with-locales.self-c29e385ac561ac8d380cf9a68428251c3dd6b6f0f05f6114c6ae7e8114678db8.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.self-65a540a6a8e61569a39a37bd1456543ae5e5bbe48868247372bed40a1dff2bcf.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap-datetimepicker.self-9bf8b50ba86095fb5caaadd1ee11eaf661b3f4879f3ea5263d541e9804fd7b15.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/ra.filter-box.self-7a15aaeea6101fb1e648df5848917eddd01c5c193ffae1e121224ec7e96d8647.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.self-0eadfce64f22b8e533f96e573e738fdf5af614af5729c772838b8d1383739035.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.self-29fedc7e0063905fecd8485d5a526f85b0d0c3f04de8416c2b56227e5b530528.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/ra.remote-form.self-6ee31242b35c47eae247621696152697683860be737fcb9fc7705305736c9370.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/jquery.pjax.self-aa02343d5b755c77fd76db8b2d2864cf2aebdba056b56e74b3b91f2e65207444.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.self-abecd3cd4d55ce44cbf00b87d2f612d570af5e7fe5701d05135d60f8c07e7d37.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/ra.i18n.self-725ab24c454e18d4832f68df96ec4fffa6190faed5636160923a6d1162a1a0ba.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.self-2621ced336904d375bef144d46edd9d304889e09c6559d64df325bbd10f4ce8a.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/ra.widgets.self-915816efd8a7fd5c48fd8f01ec2075ba2242662d91c164e39c1a4e44110b5761.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/ui.self-5f1671365225e7918e5bf4cb99fc38b189e81884fb859682f79a683f41ee19b7.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/custom/ui.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.self-ab9f3e5c71b96d0ca434851ecacc97b0fc3a0e8d96ab171916e9d5fdd10ef15b.js?body=1" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/assets/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2?v=4.4.0" for 127.0.0.1 at 2015-12-08 10:17:39 +0100
+
+
+Started GET "/admin/contact/2/delete?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 10:17:42 +0100
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"contact", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mContact Load (0.3ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ?  ORDER BY "contacts"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_delete_notice.html.haml (4.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (12.8ms)
+Completed 200 OK in 43ms (Views: 27.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/admin/contact/2/delete" for 127.0.0.1 at 2015-12-08 10:17:44 +0100
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L2bhElPmM3ILrhnCFtS2poOkzONrYFEFlyr4ainoXmrlb1ijJC4L1ksBduEc4rkU2zgEZBn3pTT0WLzme9/utg==", "return_to"=>"http://localhost:3000/admin/contact", "model_name"=>"contact", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ?  ORDER BY "contacts"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "contacts_users" WHERE "contacts_users"."contact_id" = ?  [["contact_id", 2]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "contacts" WHERE "contacts"."id" = ?[0m  [["id", 2]]
+  [1m[35m (180.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/contact
+Completed 302 Found in 197ms (ActiveRecord: 181.8ms)
+
+
+Started GET "/admin/contact" for 127.0.0.1 at 2015-12-08 10:17:44 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"contact"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mContact Load (0.4ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY contacts.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (22.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (5.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (7.0ms)
+Completed 200 OK in 488ms (Views: 478.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/contact/1/delete?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 10:17:47 +0100
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"contact", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ?  ORDER BY "contacts"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_delete_notice.html.haml (1.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (6.3ms)
+Completed 200 OK in 36ms (Views: 21.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/admin/contact/1/delete" for 127.0.0.1 at 2015-12-08 10:17:48 +0100
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DUP/vRKg4j4HsHO0BXTMhvmCo8ONsBFLiMnzIu+orbTHSkYMZWjamkcfHJcPQsM0oR5rRP8n5Xrru7euvZ8daA==", "return_to"=>"http://localhost:3000/admin/contact", "model_name"=>"contact", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ?  ORDER BY "contacts"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "contacts_users" WHERE "contacts_users"."contact_id" = ?[0m  [["contact_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "contacts" WHERE "contacts"."id" = ?  [["id", 1]]
+  [1m[36m (183.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/contact
+Completed 302 Found in 201ms (ActiveRecord: 183.9ms)
+
+
+Started GET "/admin/contact" for 127.0.0.1 at 2015-12-08 10:17:48 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"contact"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY contacts.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "contacts"
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (15.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (5.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (6.9ms)
+Completed 200 OK in 495ms (Views: 485.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 10:17:50 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (85.0ms)
+Completed 200 OK in 105ms (Views: 94.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-12-08 10:20:33 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (0.3ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY contacts.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (8.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (4.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (1.5ms)
+Completed 200 OK in 476ms (Views: 466.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-08 10:20:40 +0100
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 104ms (Views: 102.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/adminadmin" for 127.0.0.1 at 2015-12-08 10:21:07 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"admin"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contacts"[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY contacts.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (13.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (21.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (5.0ms)
+Completed 404 Not Found in 505ms (Views: 494.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-12-08 10:21:10 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY contacts.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (11.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (5.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (1.7ms)
+Completed 404 Not Found in 448ms (Views: 439.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/contact?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 10:21:13 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"contact"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY contacts.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "contacts"
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (12.7ms)
+Completed 200 OK in 34ms (Views: 22.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/contact/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2015-12-08 10:21:16 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"contact"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"  ORDER BY users.id desc
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (5.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/_submit_buttons.html.haml (1.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (27.4ms)
+Completed 200 OK in 47ms (Views: 36.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-12-08 10:21:37 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "contacts"
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY contacts.updated_at desc LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY users.updated_at desc LIMIT 1[0m
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (9.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_navigation.html.haml (5.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (2.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/bundler/gems/rails_admin-022a4fe524b9/app/views/layouts/rails_admin/pjax.html.haml (2.7ms)
+Completed 200 OK in 457ms (Views: 446.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-12-08 10:21:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 283ms (Views: 102.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/contacts/new" for 127.0.0.1 at 2015-12-08 10:21:49 +0100
+Processing by Contacts::RegistrationsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendered contacts/registrations/new.html.erb within layouts/application (28.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 172ms (Views: 170.6ms | ActiveRecord: 0.1ms)

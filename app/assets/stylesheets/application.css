@@ -34,10 +34,6 @@ body {
   width: 75%;
   margin: 30px auto;
 }
-.bordure {
-	background-color: white;
-	height: 220px;
-}
 
 .navbar-brand{
 	font-size: 70px;
@@ -45,10 +41,12 @@ body {
 
 h2 {
 	font-size: 100px;
+	text-align: center;
 }
 
 a {
   margin-top: 30px;
+  font-size: 60px;
 }
 
 .navbar-toggle .icon-bar {
@@ -92,3 +90,4 @@ input[type=submit]{
 .new_contact input{
 	width: 75%;
 }
+
