@@ -1,6 +1,21 @@
-Bonjour et bienvenue <br>
+<div class="user_bg">
+  <div class="row show avatar user_avatar">
+      <%= image_tag @qr %>
+      <p><%= @user.first_name %></p>
+      <p><%= @user.email %></p>
+  </div>
+</div>
+<div class ="row user_show">
+  
+  <div class=" row show user_info cvisite">
+    <i class="fa fa-qrcode radius"></i><div class="user_element">
+      Ma carte de visite
+    </div>
+  </div>
+  <div class=" row show user_info mcontact">
+    <i class="fa fa-users radius"></i><div class="user_element">
+      Mes contacts
+    </div>
+  </div>
 
-<%= image_tag @qr %>
-
-<%= @user.first_name %>
-<%= link_to 'nouveau contact', new_contact_path(@user.id) %>
+</div>

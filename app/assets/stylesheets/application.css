@@ -18,6 +18,7 @@
 
 body {
 	background-color: #4BA90F;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: black;
 }
 
@@ -34,10 +35,10 @@ body {
   width: 75%;
   margin: 30px auto;
 }
-.bordure {
+/*.bordure {
 	background-color: white;
 	height: 220px;
-}
+}*/
 
 .navbar-brand{
 	font-size: 70px;
@@ -88,7 +89,43 @@ input, input:focus{
 }
 input[type=submit]{
 	border:5px solid #f2edf2;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .new_contact input{
 	width: 75%;
+}
+.user_info{
+	width: 75%;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+	border-bottom: 3px solid #B5AFAF;
+	padding: 10px;
+}
+.user_show{
+	background-color: #fff;
+	font-size: 70px;
+}
+.user_avatar{
+	width: 25%;
+	margin: 0 auto;
+}
+.user_element{
+	width: 70%;
+	float: right;
+	padding: 20px;
+}
+.row.show.user_info.cvisite {
+    color: #F58B00;
+}
+.radius{
+	border-radius: 50%;
+  border: 5px solid;
+  padding: 50px;
+}
+.row.show.user_info.mcontact{
+	color: #EF0F0F;
+}
+.user_bg {
+    background-image: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F01%2F2a%2F72%2F5b%2Fmoutiers-au-perche.jpg&f=1);
+    background-size: cover;
 }
