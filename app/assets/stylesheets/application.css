@@ -128,7 +128,7 @@ input[type=submit]{
 .row.show.user_info.cvisite, .row.show.user_info.cvisite a {
     color: #F58B00;
 }
-.row.show.user_info.cvisite a:hover {
+.row.show.user_info.cvisite a:hover, .row.show.user_info.mcontact a:hover {
     text-decoration: none;
 }
 .radius{
