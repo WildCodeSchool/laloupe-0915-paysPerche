@@ -35,10 +35,13 @@ body {
   width: 75%;
   margin: 30px auto;
 }
+<<<<<<< HEAD
+=======
 /*.bordure {
 	background-color: white;
 	height: 220px;
 }*/
+>>>>>>> ef5dd660e96323e4aa4623683c0646cfb410dbf3
 
 .navbar-brand{
 	font-size: 70px;
@@ -46,10 +49,12 @@ body {
 
 h2 {
 	font-size: 100px;
+	text-align: center;
 }
 
 a {
   margin-top: 30px;
+  font-size: 60px;
 }
 
 .navbar-toggle .icon-bar {
@@ -94,6 +99,9 @@ input[type=submit]{
 .new_contact input{
 	width: 75%;
 }
+<<<<<<< HEAD
+
+=======
 .user_info{
 	width: 75%;
 	margin: 0 auto;
@@ -135,3 +143,4 @@ input[type=submit]{
     background-image: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F01%2F2a%2F72%2F5b%2Fmoutiers-au-perche.jpg&f=1);
     background-size: cover;
 }
+>>>>>>> ef5dd660e96323e4aa4623683c0646cfb410dbf3
