@@ -109,6 +109,9 @@ input[type=submit]{
 	border-bottom: 3px solid #B5AFAF;
 	padding: 10px;
 }
+.user_info a:hover{
+	text-align: none;
+}
 .user_show{
 	background-color: #fff;
 	font-size: 70px;
@@ -122,15 +125,18 @@ input[type=submit]{
 	float: right;
 	padding: 20px;
 }
-.row.show.user_info.cvisite {
+.row.show.user_info.cvisite, .row.show.user_info.cvisite a {
     color: #F58B00;
+}
+.row.show.user_info.cvisite a:hover, .row.show.user_info.mcontact a:hover {
+    text-decoration: none;
 }
 .radius{
 	border-radius: 50%;
   border: 5px solid;
   padding: 50px;
 }
-.row.show.user_info.mcontact{
+.row.show.user_info.mcontact a{
 	color: #EF0F0F;
 }
 .user_bg {

@@ -1,0 +1,10 @@
+mes contacts
+<form> 
+  <% @contacts.each do |contact| %>
+    <input type="checkbox" name="viennoiserie" value="croissant" checked><%= contact.first_name %> <%= contact.last_name %><br>
+    Téléphone: <%= contact.phone %> | email: <%= contact.email %>
+    <hr>
+  <% end %>
+</form>
+
+

@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<div class= "row">
-  <div class="field">
-    <i class="fa fa-phone"></i>
-  </div>
-  </div>
-</div>
-=======
 <div class="user_bg">
   <div class="row show avatar user_avatar">
       <%= image_tag @qr %>
@@ -16,15 +8,14 @@
 <div class ="row user_show">
   
   <div class=" row show user_info cvisite">
-    <i class="fa fa-qrcode radius"></i><div class="user_element">
-      Ma carte de visite
-    </div>
+    <a href="#"><i class="fa fa-users radius"></i><div class="user_element">
+      Mes contacts
+    </div></a>
   </div>
   <div class=" row show user_info mcontact">
-    <i class="fa fa-users radius"></i><div class="user_element">
-      Mes contacts
+    <a href="#"><i class="fa fa-qrcode radius"></i><div class="user_element">
+      <%= link_to 'Ma carte de viste', user_contacts_path  %></a>
     </div>
   </div>
 
 </div>
->>>>>>> ef5dd660e96323e4aa4623683c0646cfb410dbf3
