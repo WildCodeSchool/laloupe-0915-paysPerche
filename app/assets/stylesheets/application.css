@@ -17,7 +17,7 @@
  */
 
 body {
-	background-color: #4BA90F;
+	/*background-color: #4BA90F;*/
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: black;
 }
@@ -26,10 +26,10 @@ body {
 	font-size: 70px;
 }
 
-.nav {
+/*.nav {
 	height: 120px;
 	font-size: 50px;
-}
+}*/
 .field {
 	background-color: #fff;
   width: 75%;
@@ -43,14 +43,14 @@ body {
 }*/
 >>>>>>> ef5dd660e96323e4aa4623683c0646cfb410dbf3
 
-.navbar-brand{
+/*.navbar-brand{
 	font-size: 70px;
 }
-
-h2 {
+*/
+/*h2 {
 	font-size: 100px;
 	text-align: center;
-}
+}*/
 
 a {
   margin-top: 30px;
@@ -65,7 +65,7 @@ a {
 }
 button, html input[type=button], input[type=reset], input[type=submit]  {
 	border-radius:70px;
-	/*border:5px solid #f2edf2;*/
+	border:5px solid #f2edf2;
 	height: 200px;
 	display:inline-block;
 	cursor:pointer;
@@ -144,3 +144,5 @@ input[type=submit]{
     background-size: cover;
 }
 >>>>>>> ef5dd660e96323e4aa4623683c0646cfb410dbf3
+
+
