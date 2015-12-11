@@ -70,21 +70,25 @@
               <th>Prénom(s)</th>
               <th>Nom</th>
               <th>Titre</th>
-              <th>Entreprise</th>
+              <th>Entreprise / Structure</th>
+              <th>Email</th>
             
             </tr>
           </thead>
           <tbody>
+          <% @contacts.each do |contact| %>
             <tr>
               <th><input type="checkbox"></th>
-              <td>Eric</td>
-              <td>Legeek</td>
-              <td>Chargé de communication</td>
+              <td><%= contact.first_name %></td>
+              <td><%= contact.last_name %></td>
+              <td><%= contact.function %></td>
               <td>YataSoft Inc</td>
+              <td><%= contact.email %></td>
               <td class="inline list-inline">
               </td>
               <th><a href="#"class="btn btn-success btn-large">Détails / Éditer</a></th>
             </tr>
+          <% end %>
           </tbody>
           <tfoot>
             <tr>
@@ -93,6 +97,7 @@
               <th>Nom</th>
               <th>Titre</th>
               <th>Entreprise</th>
+              <th>Email</th>
             </tr>
           </tfoot>
         </table>
