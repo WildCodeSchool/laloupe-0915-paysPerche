@@ -20,89 +20,31 @@
 
 </div> -->
 <div class="row">
-  <div class="col-sm-3 col-md-2 col-xs-12 sidebar">
-    <ul class="nav nav-sidebar">
-      <li class="active"><a href="#">Administration > Accueil<span class="sr-only">(current)</span></a></li>
-      <li><a href="#">Mes contacts</a></li>
-      <li><a href="#">Ma carte de visite</a></li>
-      <li><a href="#">Export</a></li>
-    </ul>
-  </div>
-  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-    <h1 class="page-header">Tableau de bord</h1>
-    <div class="row placeholders">
-      <div class="col-xs-6 col-sm-3 placeholder">
-        <i class="fa fa-users img-responsive" width="200" height="200"></i>
-        <h3>Mes contacts</h3>
-        <span class="text-muted"><a href="#"class="btn btn-success btn-large">Mes contacts</a></span>
+  <div class="col-sm-12 col-md-12 main panel panel-default">
+    <div class="row panel panel-header">
+      <%= image_tag @qr %>
+      <p><%= @user.first_name %></p>
+      <p><%= @user.email %></p>
+    </div>
+    <div class="row panel panel-body">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 placeholder">
+        <%= link_to user_contacts_path do %>
+          <i class="fa fa-qrcode img-responsive"></i>
+          <span>Mon Qrcode</span>
+        <% end %>
       </div>
-      <div class="col-xs-6 col-sm-3 placeholder">
-        <i class="fa fa-qrcode img-responsive" width="200" height="200"></i>
-        <h3>Mon QrCode</h3>
-        <span class="text-muted"><a href="#"class="btn btn-success btn-large">Mon Qrcode</a></span>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 placeholder">
+        <%= link_to user_contacts_path do %>
+          <i class="fa fa-users img-responsive"></i>
+          <span>Mes contacts</span>
+        <% end %>
       </div>
-      <div class="col-xs-6 col-sm-3 placeholder">
-        <i class="fa fa-envelope-o img-responsive" width="200" height="200"></i>
-        <h3>Envoyer un mail</h3>
-        <span class="text-muted"><a href="#"class="btn btn-success btn-large">Envoyer un mail</a></span>
-      </div>
-      <div class="col-xs-6 col-sm-3 placeholder">
-        <i class="fa fa-wrench img-responsive" width="200" height="200"></i>
-        <h3>Administrer</h3>
-        <span class="text-muted"><a href="#"class="btn btn-success btn-large">Administrer</a></span>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 placeholder">
+        <%= link_to user_contacts_path do %>
+          <i class="fa fa-envelope-o img-responsive"></i>
+          <span>Deconnexion</span>
+        <% end %>
       </div>
     </div>
-    <div id="" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Rechercher</a></li>
-        <li><a href="#">Partager</a></li>
-        <li><a href="#">Envoyer un mail</a></li>
-      </ul>
-      <form class="navbar-form navbar-right">
-        <input type="text" class="form-control" placeholder="Rechercher...">
-      </form>
-    </div>
-    <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th><input type="checkbox"></th>
-              <th>Prénom(s)</th>
-              <th>Nom</th>
-              <th>Titre</th>
-              <th>Entreprise / Structure</th>
-              <th>Email</th>
-            
-            </tr>
-          </thead>
-          <tbody>
-          <% @contacts.each do |contact| %>
-            <tr>
-              <th><input type="checkbox"></th>
-              <td><%= contact.first_name %></td>
-              <td><%= contact.last_name %></td>
-              <td><%= contact.function %></td>
-              <td>YataSoft Inc</td>
-              <td><%= contact.email %></td>
-              <td class="inline list-inline">
-              </td>
-              <th><a href="#"class="btn btn-success btn-large">Détails / Éditer</a></th>
-            </tr>
-          <% end %>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th><input type="checkbox"></th>
-              <th>Prénom(s)</th>
-              <th>Nom</th>
-              <th>Titre</th>
-              <th>Entreprise</th>
-              <th>Email</th>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
   </div>
-  
-  
 </div>
