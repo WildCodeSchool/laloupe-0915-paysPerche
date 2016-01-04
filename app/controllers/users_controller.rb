@@ -12,6 +12,7 @@ class UsersController < ApplicationController
 		url = url_for( :controller => 'contacts/registrations', :action => 'new' )
 		@user = User.find(params[:id])
 		@qr = RQRCode::QRCode.new(url).to_img.resize(200, 200).to_data_url
+		@contacts = current_user.contacts
 	end
 
 	def edit
