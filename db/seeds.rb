@@ -105,3 +105,55 @@ User.create(
 			is_admin: 'false'}
 	]
 )
+
+Contact.create(
+	[	
+		{ first_name: 'Eric', 
+			last_name: 'Dupont', 
+			function: 'Maire', phone: '009393939', 
+			email: '1@gmail.com', 
+			password: '11111111', 
+			user_id: '1'}
+	]
+)
+
+Contact.create(
+	[	
+		{ first_name: 'Koklo', 
+			last_name: 'Kala', 
+			function: 'Maire', phone: '009393939', 
+			email: '2@gmail.com', 
+			password: '11111111', 
+			user_id: '1'}
+	]
+)
+Contact.create(
+	[	
+		{ first_name: 'Eric', 
+			last_name: 'Dupont', 
+			function: 'Maire', phone: '009393939', 
+			email: '3@gmail.com', 
+			password: '11111111', 
+			user_id: '1'}
+	]
+)
+Contact.create(
+	[	
+		{ first_name: 'Boris', 
+			last_name: 'Dupont', 
+			function: 'Maire', phone: '009393939', 
+			email: '4@gmail.com', 
+			password: '11111111', 
+			user_id: 1}
+	]
+)
+Contact.create(
+	[	
+		{ first_name: 'Rake', 
+			last_name: 'Dupont', 
+			function: 'Maire', phone: '009393939', 
+			email: '5@gmail.com', 
+			password: '11111111', 
+			user_id: 1}
+	]
+)
