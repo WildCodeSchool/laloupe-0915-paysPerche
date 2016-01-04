@@ -23,7 +23,14 @@
   <div class="col-sm-12 col-md-12 main panel panel-default">
     <div class="row panel panel-header">
       <%= image_tag @qr %>
-      <p><%= @user.first_name %></p>
+      <h3>
+        <% if @user.first_name.present? %>
+          <%= @user.first_name %>
+        <% end %>
+        <% if @user.last_name.present? %>
+          <%= @user.last_name %>
+        <% end %>
+      </h3>
       <p><%= @user.email %></p>
     </div>
     <div class="row panel panel-body">
