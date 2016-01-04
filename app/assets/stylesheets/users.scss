@@ -8,13 +8,17 @@
 }
 .placeholder {
   margin-bottom: 20px;
+  box-shadow: 0 1px 2px;
   img {
     display: inline-block;
     border-radius: 50%;
   }
   i.fa.fa-envelope-o.img-responsive, i.fa.fa-users.img-responsive, i.fa.fa-qrcode.img-responsive, i.fa.fa-wrench.img-responsive {
-    font-size: 100px;
+    font-size: 300%;
   }
+}
+.colorprofil{
+  color: #AD791A;
 }
 .colorqrcode {
   color: orange;
@@ -28,4 +32,10 @@
 span {
   font-size: 60px;
   margin-left: 50px;
+}
+.fa{
+  border-radius: 50%;
+  border: 5px solid;
+  padding: 15px;
+  margin-bottom: 15px;
 }
