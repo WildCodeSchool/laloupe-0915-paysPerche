@@ -1,0 +1,3 @@
+<% @contacts.each do |contact| %>
+	<input type="checkbox" id="puppy_gooddog" name="puppy[gooddog]" value="<%= contact.email %>" /><%= contact.first_name %> <%= contact.last_name %>: <%= contact.email %><br>
+<% end %>
