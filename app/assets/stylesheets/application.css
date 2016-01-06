@@ -16,6 +16,12 @@
  *= require font-awesome
  */
 
+ .content {
+ 	height: 100vh;
+ 	width: 100vw;
+ }
+@media screen and (max-width: 976px)
+{
 body {
 	/*background-color: #4BA90F;*/
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -30,6 +36,10 @@ body {
 	height: 120px;
 	font-size: 50px;
 }*/
+.bordure {
+	height: 50px;
+	font-size: 10px;
+}
 .field {
 	background-color: #fff;
   width: 75%;
@@ -123,7 +133,5 @@ input[type=submit]{
 .user_bg {
     background-image: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F01%2F2a%2F72%2F5b%2Fmoutiers-au-perche.jpg&f=1);
     background-size: cover;
-    height: 250px;
   }
-
-
+}
