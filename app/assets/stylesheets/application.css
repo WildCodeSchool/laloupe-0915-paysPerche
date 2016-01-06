@@ -48,17 +48,17 @@ a {
     width: 22px;
 }
 button, html input[type=button], input[type=reset], input[type=submit]  {
+  border:5px solid #f2edf2;
+/*  height: 200px;
+  font-size:60px;
 	border-radius:70px;
-	border:5px solid #f2edf2;
-	height: 200px;
-	display:inline-block;
-	cursor:pointer;
-	color: black;
-	font-family: Georgia;
-	font-size:60px;
-	padding:19px 150px;
-	text-decoration:none;
 	background-color:transparent;
+  padding:19px 150px;*/
+  display:inline-block;
+  cursor:pointer;
+  color: black;
+  font-family: Georgia;
+  text-decoration:none;
 	position:relative;
 	top:1px;
 
@@ -71,10 +71,10 @@ button, html input[type=button], input[type=reset], input[type=submit]  {
 	text-align: center;
 }
 input, input:focus{
-	border: 0;
+	/*border: 0;
 	-moz-border: 0;
 	-o-border: 0;
-	-webkit-border: 0;
+	-webkit-border: 0;*/
 }
 input[type=submit]{
 	border:5px solid #f2edf2;

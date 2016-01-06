@@ -32,6 +32,10 @@ class UsersController < ApplicationController
 		@contacts = Contact.all
 	end
 
+	def postmail
+		binding.pry
+	end
+
 	private
 	def user_params
 		params.require(:user).permit(:first_name, :last_name, :function, :phone, :email, :password)
