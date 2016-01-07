@@ -34,7 +34,7 @@ class UsersController < ApplicationController
 
 	def postmail
 		users = User.group_to_send(params)
-		message = User.message_to_send(params)
+		# message = User.message_to_send(params)
 	end
 
 	private

@@ -34,24 +34,32 @@ class User < ActiveRecord::Base
    end
   end
   def self.group_to_send(params)
-    tab = []
+    @tab = []
     params[:person].each do |k, v|
       if !!k.match(/^.+@.+$/) && v.include?("1")  
-        tab << k
+        @tab << k
       end  
     end
-    tab
-  end
-
-  def self.message_to_send(params)
-    message = ""
+    
+    @message = ""
     params[:person].each do |k, v|
       if k == "body"
-        message = v
+        @message = v
       end
     end
-    message
+    ContactMailer.mail_groupe(@tab,@message).deliver_now
+
   end
+
+  # def self.message_to_send(params)
+  #   message = ""
+  #   params[:person].each do |k, v|
+  #     if k == "body"
+  #       message = v
+  #     end
+  #   end
+  #   message
+  # end
   private
     def notify_by_email
       ContactMailer.new_register(self).deliver_now
