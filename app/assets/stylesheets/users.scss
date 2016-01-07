@@ -1,6 +1,10 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@media screen and (max-width: 976px)
+{
 .panel{
   .panel-header{
         text-align: center;
@@ -39,4 +43,8 @@ span {
   border: 5px solid;
   padding: 15px;
   margin-bottom: 15px;
+}
+#monBlocConteneur { 
+  width: 100%;
+ }
 }

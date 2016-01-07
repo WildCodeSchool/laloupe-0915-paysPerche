@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
          
    after_create :notify_by_email
 
- rails_admin do
+  rails_admin do
    list do
        field :first_name
        field :last_name
@@ -32,10 +32,28 @@ class User < ActiveRecord::Base
        field :contacts
 
    end
- end
-
-  private
-  def notify_by_email
-    ContactMailer.new_register(self).deliver_now
   end
+  def self.group_to_send(params)
+    tab = []
+    params[:person].each do |k, v|
+      if !!k.match(/^.+@.+$/) && v.include?("1")  
+        tab << k
+      end  
+    end
+    tab
+  end
+
+  def self.message_to_send(params)
+    message = ""
+    params[:person].each do |k, v|
+      if k == "body"
+        message = v
+      end
+    end
+    message
+  end
+  private
+    def notify_by_email
+      ContactMailer.new_register(self).deliver_now
+    end
 end

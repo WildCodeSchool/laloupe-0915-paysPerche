@@ -33,6 +33,8 @@ class UsersController < ApplicationController
 	end
 
 	def postmail
+		users = User.group_to_send(params)
+		message = User.message_to_send(params)
 		binding.pry
 	end
 
