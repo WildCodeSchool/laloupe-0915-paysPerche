@@ -11,4 +11,14 @@ class ContactMailer < ApplicationMailer
 
     mail to: "#{@contact.email}", subject: "Vos accés à la plateforme du Pays Perche"
   end
+
+  def mail_groupe(contact, subject, body)
+    @greeting = "Hello"
+    @contact = contact
+    @subject = subject
+    @body = body
+    @greeting = "Hi"
+
+    mail to: "#{@contact.email}", subject: "#{@subject}"
+  end
 end

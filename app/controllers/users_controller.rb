@@ -33,9 +33,16 @@ class UsersController < ApplicationController
 	end
 
 	def postmail
-		users = User.group_to_send(params)
+		users = User.group_to_send(params).flatten!
 		message = User.message_to_send(params)
+		subject = User.email_subject(params)
+		users.map do |user|
+			ContactMailer.mail_groupe(user, subject, message).deliver_later!
+		end
+		redirect_to root_path, notice: "Mail bien envoyé"
+		
 	end
+
 
 	private
 	def user_params
