@@ -1,12 +1,9 @@
-<!-- <% @contacts.each do |contact| %>
-	<input type="checkbox" id="<%= contact.first_name %>" name="puppy[gooddog]" checked_value = "<%= contact.email %>", unchecked_value = "0" /><%= contact.first_name %> <%= contact.last_name %>: <%= contact.email %><br>
-<% end %> -->
-
 <%= form_tag("/users/mailgroupe") do %>
   <%= form_for :person do |f| %>
     <% @contacts.each do |contact| %>
       <%= f.check_box contact.email %><%= contact.first_name %> <%= contact.last_name %>: <%= contact.email %><br>
     <% end %>
+    <%= f.label "Sujet" %> <%= f.text_field :subject %><br>
     <%= f.text_area :body %><br>
     <span class ="btn btn-default"><%= f.submit "Envoyer un mail" %></span>
     
