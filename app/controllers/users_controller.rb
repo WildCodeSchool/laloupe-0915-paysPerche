@@ -36,6 +36,7 @@ class UsersController < ApplicationController
 		users = User.group_to_send(params).flatten!
 		message = User.message_to_send(params)
 		subject = User.email_subject(params)
+		
 		users.map do |user|
 			ContactMailer.mail_groupe(user, subject, message).deliver_later!
 		end
