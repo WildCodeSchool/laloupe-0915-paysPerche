@@ -6,20 +6,21 @@
 @media screen and (max-width: 976px)
 {
 .panel{
+  border: none;
   .panel-header{
         text-align: center;
   }
 }
 .placeholder {
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-shadow: 0 1px 2px;
   img {
     display: inline-block;
     border-radius: 50%;
   }
   i.fa.fa-envelope-o.img-responsive, i.fa.fa-users.img-responsive, i.fa.fa-qrcode.img-responsive, i.fa.fa-wrench.img-responsive {
-    font-size: 300%;
+    font-size: 50%;
   }
 }
 .colorprofil{
@@ -29,14 +30,16 @@
   color: orange;
 }
 .colorcontact{
-  color: red;
+  color: blue;
 }
 .colordeco{
   color: green;
 }
+.coloradmin{
+  color: red;
+}
 span {
-  font-size: 60px;
-  margin-left: 50px;
+  font-size: 25px;
 }
 .fa{
   border-radius: 50%;
@@ -46,5 +49,9 @@ span {
 }
 #monBlocConteneur { 
   width: 100%;
+ }
+ img {
+  width: 100px;
+  margin-top: 10px;
  }
 }

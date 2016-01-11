@@ -1,11 +1,14 @@
-mes contacts
-<div class ="row">
-  <form> 
+<h2>Mes contacts</h2>
+<div class = "container">
+	<div class ="row">
+  	<form> 
     <% @contacts.each do |contact| %>
       <input type="checkbox" name="viennoiserie" value="croissant" checked><%= contact.first_name %> <%= contact.last_name %><br>
       Téléphone: <%= contact.phone %> | email: <%= contact.email %>
       <hr>
-    <% end %>
-  </form>
+    	<% end %>
+  	</form>
+  	 <button>Envoyer le(s) contact(s) à :</button>
+	</div>
 </div>
 
