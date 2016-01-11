@@ -1,16 +1,64 @@
-<!-- <% @contacts.each do |contact| %>
-	<input type="checkbox" id="<%= contact.first_name %>" name="puppy[gooddog]" checked_value = "<%= contact.email %>", unchecked_value = "0" /><%= contact.first_name %> <%= contact.last_name %>: <%= contact.email %><br>
-<% end %> -->
-
-<%= form_tag("/users/mailgroupe") do %>
-  <%= form_for :person do |f| %>
-    <% @contacts.each do |contact| %>
-      <%= f.check_box contact.email %><%= contact.first_name %> <%= contact.last_name %>: <%= contact.email %><br>
-    <% end %>
-    <%= f.text_area :body %><br>
-    <span class ="btn btn-default"><%= f.submit "Envoyer un mail" %></span>
-    
-  <% end %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 main">
+      <h2 class="sub-header">Contacts</h2>
+      <div class="table-responsive"></div>
+        <%= form_tag("/users/mailgroupe") do %>
+          <%= form_for :person do |f| %>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Prenom</th>
+                <th>Nom</th>
+                <th>Fontion</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @contacts.each do |contact| %>
+                <tr>
+                  <td><%= f.check_box contact.email %></td>
+                  <td><%= contact.first_name %></td>
+                  <td><%= contact.last_name %></td>
+                  <td><%= contact.function %></td>
+                  <td><%= contact.email %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Envoyer un mail groupé</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="control-label">Sujet:</label>
+                        <%= f.text_field :subject, class: "form-control", id: "recipient-name" %>
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="control-label">Message:</label>
+                        <%= f.text_area :body, class: "form-control", id: "message-text" %>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <%= f.submit "Envoyer un mail", class: "btn btn-primary" %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
 
  

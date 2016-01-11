@@ -37,10 +37,20 @@ class User < ActiveRecord::Base
     tab = []
     params[:person].each do |k, v|
       if !!k.match(/^.+@.+$/) && v.include?("1")  
-        tab << k
+        tab <<Contact.where(email: k)
       end  
     end
     tab
+  end
+
+  def self.email_subject(params)
+    subject = ""
+    params[:person].each do |k, v|
+      if k == "subject"
+        subject = v
+      end
+    end
+    subject
   end
 
   def self.message_to_send(params)
@@ -52,6 +62,7 @@ class User < ActiveRecord::Base
     end
     message
   end
+
   private
     def notify_by_email
       ContactMailer.new_register(self).deliver_now
