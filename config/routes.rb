@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'users#index'
   get '/users/:id/contacts' => 'users#mes_contacts', as: 'user_contacts'
+  get 'users/:id/mailgroupe' => 'users#mailgroupe', as: 'mailgroupe'
+  post 'users/mailgroupe' => 'users#postmail', as: "postmail"
   devise_for :users
   devise_for :contacts, controllers: { 
     registrations: 'contacts/registrations',

@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	include UsersHelper
 	before_action :authenticate_user!
 	def index
 		@user = User.all
@@ -27,6 +28,16 @@ class UsersController < ApplicationController
 			render 'edit', notice: "\#{@user.first_name}\" n'a pas été modifié"
 		end
 	end
+
+	def mailgroupe
+		@contacts = Contact.all
+	end
+
+	def postmail
+		send_mail(params)
+		redirect_to root_path, notice: "Mail(s) bien envoyé(s)"
+	end
+
 
 	private
 	def user_params

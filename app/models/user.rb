@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
          
    after_create :notify_by_email
 
- rails_admin do
+  rails_admin do
    list do
        field :first_name
        field :last_name
@@ -32,10 +32,10 @@ class User < ActiveRecord::Base
        field :contacts
 
    end
- end
+  end
 
   private
-  def notify_by_email
-    ContactMailer.new_register(self).deliver_now
-  end
+    def notify_by_email
+      ContactMailer.new_register(self).deliver_now
+    end
 end
