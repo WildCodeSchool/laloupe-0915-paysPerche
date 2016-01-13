@@ -46,5 +46,9 @@ module UsersHelper
     subject
   end
 
+  def qrcode
+    url = url_for( :controller => 'contacts/registrations', :action => 'new' )
+    RQRCode::QRCode.new(url).to_img.resize(200, 200).to_data_url
+  end
 
 end
