@@ -7,6 +7,7 @@ class UsersController < ApplicationController
 
 	def mes_contacts
 		@contacts = current_user.contacts
+		@users = User.all
 	end
 
 	def show
@@ -37,6 +38,9 @@ class UsersController < ApplicationController
 		redirect_to root_path, notice: "Mail(s) bien envoyé(s)"
 	end
 
+	def share_contact
+		binding.pry
+	end
 
 	private
 	def user_params
