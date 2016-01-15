@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	has_and_belongs_to_many :contacts
+  has_and_belongs_to_many :contacts
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -32,35 +32,6 @@ class User < ActiveRecord::Base
        field :contacts
 
    end
-  end
-  def self.group_to_send(params)
-    tab = []
-    params[:person].each do |k, v|
-      if !!k.match(/^.+@.+$/) && v.include?("1")  
-        tab <<Contact.where(email: k)
-      end  
-    end
-    tab
-  end
-
-  def self.email_subject(params)
-    subject = ""
-    params[:person].each do |k, v|
-      if k == "subject"
-        subject = v
-      end
-    end
-    subject
-  end
-
-  def self.message_to_send(params)
-    message = ""
-    params[:person].each do |k, v|
-      if k == "body"
-        message = v
-      end
-    end
-    message
   end
 
   private

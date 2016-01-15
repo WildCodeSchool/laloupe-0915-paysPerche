@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	include UsersHelper
 	before_action :authenticate_user!
 	def index
 		@user = User.all
@@ -6,12 +7,12 @@ class UsersController < ApplicationController
 
 	def mes_contacts
 		@contacts = current_user.contacts
+		@users = User.all
 	end
 
 	def show
-		url = url_for( :controller => 'contacts/registrations', :action => 'new' )
+		@qr = qrcode
 		@user = User.find(params[:id])
-		@qr = RQRCode::QRCode.new(url).to_img.resize(200, 200).to_data_url
 		@contacts = current_user.contacts
 	end
 
@@ -41,7 +42,13 @@ class UsersController < ApplicationController
 			ContactMailer.mail_groupe(user, subject, message).deliver_later!
 		end
 		redirect_to root_path, notice: "Mail bien envoyé"
+		send_mail(params)
+		redirect_to root_path, notice: "Mail(s) bien envoyé(s)"
+	end
 
+	def share_contact
+		binding.pry
+	end
 
 	private
 	def user_params
