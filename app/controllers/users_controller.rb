@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	include UsersHelper
 	before_action :authenticate_user!
 	def index
 		@user = User.all
@@ -6,12 +7,12 @@ class UsersController < ApplicationController
 
 	def mes_contacts
 		@contacts = current_user.contacts
+		@users = User.all
 	end
 
 	def show
-		url = url_for( :controller => 'contacts/registrations', :action => 'new' )
+		@qr = qrcode
 		@user = User.find(params[:id])
-		@qr = RQRCode::QRCode.new(url).to_img.resize(200, 200).to_data_url
 		@contacts = current_user.contacts
 	end
 
@@ -28,10 +29,21 @@ class UsersController < ApplicationController
 		end
 	end
 
+	def mailgroupe
+		@contacts = Contact.all
+	end
+
+	def postmail
+		send_mail(params)
+		redirect_to root_path
+	end
+
+	def share_contact
+		binding.pry
+	end
+
 	private
 	def user_params
 		params.require(:user).permit(:first_name, :last_name, :function, :phone, :email, :password)
 	end
 end
-
-

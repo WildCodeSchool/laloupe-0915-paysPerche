@@ -16,6 +16,17 @@
  *= require font-awesome
  */
 
+ .content {
+ 	height: 100vh;
+ 	width: 100vw;
+ }
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+}
+
+@media screen and (max-width: 976px)
+{
 body {
 	/*background-color: #4BA90F;*/
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -23,13 +34,12 @@ body {
 }
 
 .style_form {
-	font-size: 70px;
+	font-size: 20px;
 }
-
-/*.nav {
-	height: 120px;
-	font-size: 50px;
-}*/
+.bordure {
+	height: 50px;
+	font-size: 10px;
+}
 .field {
 	background-color: #fff;
   width: 75%;
@@ -37,28 +47,28 @@ body {
 }
 
 a {
-  margin-top: 30px;
-  font-size: 60px;
+  font-size: 35px;
 }
 
 .navbar-toggle .icon-bar {
     border-radius: 1px;
     display: block;
     height: 2px;
-    width: 22px;
+    width: 20px;
 }
+
 button, html input[type=button], input[type=reset], input[type=submit]  {
+  border:5px solid #f2edf2;
+/*  height: 200px;
+  font-size:60px;
 	border-radius:70px;
-	border:5px solid #f2edf2;
-	height: 200px;
-	display:inline-block;
-	cursor:pointer;
-	color: black;
-	font-family: Georgia;
-	font-size:60px;
-	padding:19px 150px;
-	text-decoration:none;
 	background-color:transparent;
+  padding:19px 150px;*/
+  display:inline-block;
+  cursor:pointer;
+  color: black;
+  font-family: Georgia;
+  text-decoration:none;
 	position:relative;
 	top:1px;
 
@@ -71,10 +81,10 @@ button, html input[type=button], input[type=reset], input[type=submit]  {
 	text-align: center;
 }
 input, input:focus{
-	border: 0;
+	/*border: 0;
 	-moz-border: 0;
 	-o-border: 0;
-	-webkit-border: 0;
+	-webkit-border: 0;*/
 }
 input[type=submit]{
 	border:5px solid #f2edf2;
@@ -122,8 +132,6 @@ input[type=submit]{
 }
 .user_bg {
     background-image: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F01%2F2a%2F72%2F5b%2Fmoutiers-au-perche.jpg&f=1);
-    background-size: cover;
-    height: 280px;
-  }
-
-
+    background-size: cover;	
+}
+}
