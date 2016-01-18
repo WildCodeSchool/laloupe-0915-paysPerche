@@ -39,7 +39,9 @@ class UsersController < ApplicationController
 	end
 
 	def share_contact
+		relations(params)
 		binding.pry
+		redirect_to user_contacts_path
 	end
 
 	private

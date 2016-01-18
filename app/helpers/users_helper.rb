@@ -46,6 +46,34 @@ module UsersHelper
     subject
   end
 
+  def contacts_to_share(params)
+    tab_contacts = []
+    params[:person].each do |k, v|
+      if v.include?("1")
+        tab_contacts << Contact.where(id: k)
+      end  
+    end
+    tab_contacts
+  end
+
+  def users_to_share(params)
+    tab_users = []
+    params[:person2].each do |k, v|
+      if v.include?("1")  
+        tab_users << Contact.where(id: k)
+      end  
+    end
+    tab_users
+  end
+
+  def relations(params)
+    contacts = contacts_to_share(params).flatten!
+    users = users_to_share(params).flatten!
+    users.find_each do |user|
+      user.contacts << contacts
+    end
+  end
+
   def qrcode
     url = url_for( :controller => 'contacts/registrations', :action => 'new' )
     RQRCode::QRCode.new(url).to_img.resize(200, 200).to_data_url

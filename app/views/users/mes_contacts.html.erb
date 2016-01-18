@@ -18,7 +18,7 @@
               <tbody>
                 <% @contacts.each do |contact| %>
                   <tr>
-                    <td><%= check_box_tag contact.id %></td>
+                    <td><%= f.check_box contact.email %></td>
                     <td><%= contact.first_name %></td>
                     <td><%= contact.last_name %></td>
                     <td><%= contact.function %></td>
@@ -27,7 +27,7 @@
                 <% end %>
               </tbody>
             </table>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Partager un contact</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Partage de contatc</button>
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -36,7 +36,7 @@
                     <h4 class="modal-title" id="exampleModalLabel">Choisir un user</h4>
                   </div>
                   <div class="modal-body">
-                    <form>
+                    <%= form_for :person2 do |f| %>
                     <table class="table table-striped">
                       <thead>
                         <tr>
@@ -49,6 +49,7 @@
                       </thead>
                       <tbody>
                         <% @users.each do |user| %>
+
                           <tr>
                             <td><%= f.check_box user.id %></td>
                             <td><%= user.first_name %></td>
@@ -59,6 +60,7 @@
                         <% end %>
                       </tbody>
                     </table>
+                    <% end %>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
