@@ -27,94 +27,107 @@ html, body {
 
 @media screen and (max-width: 976px)
 {
-body {
-	/*background-color: #4BA90F;*/
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	color: black;
+  body {
+  	/*background-color: #4BA90F;*/
+  	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  	color: black;
+  }
+
+  .style_form {
+  	font-size: 20px;
+  }
+  .bordure {
+  	height: 50px;
+  	font-size: 10px;
+  }
+  .field {
+  	background-color: #fff;
+    width: 75%;
+    margin: 30px auto;
+  }
+
+  a {
+    font-size: 35px;
+  }
+
+  .navbar-toggle .icon-bar {
+      border-radius: 1px;
+      display: block;
+      height: 2px;
+      width: 20px;
+  }
+
+  button, html input[type=button], input[type=reset], input[type=submit]  {
+    border:5px solid #f2edf2;
+  /*  height: 200px;
+    font-size:60px;
+  	border-radius:70px;
+  	background-color:transparent;
+    padding:19px 150px;*/
+    display:inline-block;
+    cursor:pointer;
+    color: black;
+    font-family: Georgia;
+    text-decoration:none;
+  	position:relative;
+  	top:1px;
+
+  }
+  .field .fa{
+  	color: #4BA90F;
+  	padding: 0 10px;
+  }
+  .actions{
+  	text-align: center;
+  }
+  input, input:focus{
+  	/*border: 0;
+  	-moz-border: 0;
+  	-o-border: 0;
+  	-webkit-border: 0;*/
+  }
+  input[type=submit]{
+  	border:5px solid #f2edf2;
+  	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .new_contact input{
+  	width: 75%;
+  }
+  .user_info{
+  	width: 75%;
+  	margin: 0 auto;
+  	/*border: 1px solid black;*/
+  	border-bottom: 3px solid #B5AFAF;
+  	padding: 10px;
+  }
+  .user_info a:hover{
+  	text-align: none;
+  }
+  .user_show{
+  	background-color: #fff;
+  	font-size: 70px;
+  }
+  .user_avatar{
+  	width: 25%;
+  	margin: 0 auto;
+  }
+  .user_element{
+  	width: 70%;
+  	float: right;
+  	padding: 20px;
+  }
+  
+  .radius{
+  	border-radius: 50%;
+    border: 5px solid;
+    padding: 50px;
+  }
+  
 }
 
-.style_form {
-	font-size: 20px;
-}
-.bordure {
-	height: 50px;
-	font-size: 10px;
-}
-.field {
-	background-color: #fff;
-  width: 75%;
-  margin: 30px auto;
-}
-
-a {
-  font-size: 35px;
-}
-
-.navbar-toggle .icon-bar {
-    border-radius: 1px;
-    display: block;
-    height: 2px;
-    width: 20px;
-}
-
-button, html input[type=button], input[type=reset], input[type=submit]  {
-  border:5px solid #f2edf2;
-/*  height: 200px;
-  font-size:60px;
-	border-radius:70px;
-	background-color:transparent;
-  padding:19px 150px;*/
-  display:inline-block;
-  cursor:pointer;
-  color: black;
-  font-family: Georgia;
-  text-decoration:none;
-	position:relative;
-	top:1px;
-
-}
-.field .fa{
-	color: #4BA90F;
-	padding: 0 10px;
-}
-.actions{
-	text-align: center;
-}
-input, input:focus{
-	/*border: 0;
-	-moz-border: 0;
-	-o-border: 0;
-	-webkit-border: 0;*/
-}
-input[type=submit]{
-	border:5px solid #f2edf2;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-.new_contact input{
-	width: 75%;
-}
-.user_info{
-	width: 75%;
-	margin: 0 auto;
-	/*border: 1px solid black;*/
-	border-bottom: 3px solid #B5AFAF;
-	padding: 10px;
-}
-.user_info a:hover{
-	text-align: none;
-}
-.user_show{
-	background-color: #fff;
-	font-size: 70px;
-}
-.user_avatar{
-	width: 25%;
-	margin: 0 auto;
-}
-.user_element{
-	width: 70%;
-	float: right;
-	padding: 20px;
+.user_bg {
+    background-image: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F01%2F2a%2F72%2F5b%2Fmoutiers-au-perche.jpg&f=1);
+    background-size: cover; 
 }
 .row.show.user_info.cvisite, .row.show.user_info.cvisite a {
     color: #F58B00;
@@ -122,16 +135,6 @@ input[type=submit]{
 .row.show.user_info.cvisite a:hover, .row.show.user_info.mcontact a:hover {
     text-decoration: none;
 }
-.radius{
-	border-radius: 50%;
-  border: 5px solid;
-  padding: 50px;
-}
 .row.show.user_info.mcontact a{
-	color: #EF0F0F;
-}
-.user_bg {
-    background-image: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F01%2F2a%2F72%2F5b%2Fmoutiers-au-perche.jpg&f=1);
-    background-size: cover;	
-}
+  color: #EF0F0F;
 }

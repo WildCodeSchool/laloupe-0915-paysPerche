@@ -23,21 +23,7 @@
     font-size: 50%;
   }
 }
-.colorprofil{
-  color: #AD791A;
-}
-.colorqrcode {
-  color: orange;
-}
-.colorcontact{
-  color: blue;
-}
-.colordeco{
-  color: green;
-}
-.coloradmin{
-  color: red;
-}
+
 span {
   font-size: 25px;
 }
@@ -55,3 +41,22 @@ span {
   margin-top: 10px;
  }
 }
+/* desktop all large screen > 976px */
+.colorprofil{
+  color: #AD791A;
+}
+.colorqrcode {
+  color: orange;
+}
+.colorcontact{
+  color: blue;
+}
+.colordeco{
+  color: green;
+}
+.coloradmin{
+  color: red;
+}
+.panel-header{
+        text-align: center;
+  }

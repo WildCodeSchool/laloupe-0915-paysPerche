@@ -1,29 +1,57 @@
-<h2> Nouveau contact </h2>
-<div class="style_form contact row">
-<%= form_for(resource, as: resource_name, url: create_contact_path(params[:id])) do |f| %>
-  <%= devise_error_messages! %>
-  <div class="field row">
-    <i class="fa fa-user"></i><%= f.text_field :first_name, :placeholder => "Prénom" %>
-  </div>
-  <div class="field row">
-    <i class="fa fa-user"></i><%= f.text_field :last_name, :placeholder => "Nom" %>
-  </div>
-  <div class="field row">
-    <i class="fa fa-briefcase"></i><%= f.text_field :function, :placeholder => "Metier" %>
-  </div>
+<div class="container">
+  <div class="row">
+    <div class="row">
+      <h2> Nouveau contact </h2>
+      <div class="style_form contact row">
+      <%= form_for(resource, as: resource_name, url: create_contact_path(params[:id])) do |f| %>
+        <%= devise_error_messages! %>
+        <div class="row">
+          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <i class="fa fa-user"></i><%= f.text_field :first_name, :placeholder => "Prénom" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <i class="fa fa-user"></i><%= f.text_field :last_name, :placeholder => "Nom" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <i class="fa fa-briefcase"></i><%= f.text_field :function, :placeholder => "Titre" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <i class="fa fa-briefcase"></i><%= f.text_field :function, :placeholder => "Structure / Entreprise" %>
+          </div>
+        </div>
 
-  <div class="field row">
-    <i class="fa fa-phone"></i><%= f.text_field :phone, :placeholder => "Téléphone" %>
-  </div>
+        <div class="row">
+          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <i class="fa fa-phone"></i><%= f.text_field :phone, :placeholder => "Téléphone" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <i class="fa fa-envelope-o"></i><%= f.email_field :email, autofocus: true, :placeholder => "Mail" %>
+          </div>
+        </div>
 
-  <div class="field row">
-    <i class="fa fa-envelope-o"></i><%= f.email_field :email, autofocus: true, :placeholder => "Mail" %>
-  </div>
+        <div class="row">
+          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            Acceptez-vous les CGU  ? <input type="checkbox" />
+          </div>
+        </div>
 
-  <%= f.hidden_field :user_id, value: params[:id] %>
-<br>
-  <div class="actions">
-    <%= f.submit "Enregistrer" %>
+        <%= f.hidden_field :user_id, value: params[:id] %>
+      <br>
+        <div class="row">
+          <div class="actions col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <%= f.submit "Enregistrer" %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
   </div>
 </div>
-<% end %>
