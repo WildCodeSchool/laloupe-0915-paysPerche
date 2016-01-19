@@ -53,7 +53,8 @@ class Contacts::RegistrationsController < Devise::RegistrationsController
     :function, 
     :phone,
     :email,
-    :note]
+    :note,
+    :organisation]
 
   def sign_up_params
     params.require(:contact).permit(ALLOWED_PARAMS)

@@ -9,7 +9,7 @@ class ContactMailer < ApplicationMailer
   	@contact = contact
     @greeting = "Hi"
 
-    mail to: "#{@contact.email}", subject: "Vos accés à la plateforme du Pays Perche"
+    mail to: "#{@contact.email}", subject: "Confirmation de votre inscription"
   end
 
   def mail_groupe(contact, subject, body)

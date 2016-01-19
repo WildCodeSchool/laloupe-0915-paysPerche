@@ -24,7 +24,9 @@ html, body {
    max-width: 100%;
    overflow-x: hidden;
 }
-
+.fa{
+  font-size: 45px;
+}
 @media screen and (max-width: 976px)
 {
   body {
@@ -46,9 +48,9 @@ html, body {
     margin: 30px auto;
   }
 
-  a {
+ /* a {
     font-size: 35px;
-  }
+  }*/
 
   .navbar-toggle .icon-bar {
       border-radius: 1px;
@@ -137,4 +139,7 @@ html, body {
 }
 .row.show.user_info.mcontact a{
   color: #EF0F0F;
+}
+.footer{
+  text-align: center;
 }
