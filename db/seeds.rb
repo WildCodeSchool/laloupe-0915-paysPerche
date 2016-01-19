@@ -7,111 +7,21 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 User.create(
 	[	
-		{ first_name: 'Syyrius', 
-			last_name: 'Jio', 
-			function: 'Administrateur', phone: '009393939', 
+		{ first_name: 'Cyril', 
+			last_name: 'Leclerc', 
+			function: 'Administrateur', phone: '0939393939', 
 			email: 'xx@xxxx.com', 
 			password: '11111111', 
 			is_admin: 'true'}
 	]
 )
-User.create(
+
+Contact.create(
 	[	
-		{ first_name: 'Boris', 
-			last_name: 'Li', 
-			function: 'Maire', phone: '009393939', 
-			email: 'Boris@popof.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Henri', 
-			last_name: 'Li', 
-			function: 'Deputé', phone: '009393939', 
-			email: 'Henri@li.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Ben', 
+		{ first_name: 'Benjamin', 
 			last_name: 'Zak', 
-			function: 'élu du Perche', phone: '009393939', 
-			email: 'benjamin@Zak.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Gonzalo', 
-			last_name: 'Perez', 
-			function: 'fonctionnaire', phone: '009393939', 
-			email: 'gonzalo@perez.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Javier', 
-			last_name: 'ederson', 
-			function: 'Maire', phone: '009393939', 
-			email: 'ederson@javier.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Paul', 
-			last_name: 'Walker', 
-			function: 'Maire', phone: '009393939', 
-			email: 'paul@walker.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'François', 
-			last_name: 'Hollande', 
-			function: 'Président', phone: '009393939', 
-			email: 'elysee@france.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Vladimir', 
-			last_name: 'Akinfeev', 
-			function: 'Maire', phone: '009393939', 
-			email: 'akinvlad@france.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Pierre', 
-			last_name: 'Dupont', 
-			function: 'Maire', phone: '009393939', 
-			email: 'dupont@pierre.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-
-Contact.create(
-	[	
-		{ first_name: 'Eric', 
-			last_name: 'Dupont', 
-			function: 'Maire', phone: '009393939', 
-			email: '1@gmail.com', 
+			function: 'Décorateur', phone: '0232224455', 
+			email: 'tom.eric@gmail.com', 
 			password: '11111111', 
 			user_id: '1'}
 	]
@@ -119,40 +29,76 @@ Contact.create(
 
 Contact.create(
 	[	
-		{ first_name: 'Koklo', 
-			last_name: 'Kala', 
-			function: 'Maire', phone: '009393939', 
-			email: '2@gmail.com', 
+		{ first_name: 'Edem', 
+			last_name: 'Alomatsi', 
+			function: 'Maçon', phone: '0233241188', 
+			email: 'edem.alomatsi@gmail.com', 
 			password: '11111111', 
 			user_id: '1'}
 	]
 )
+
 Contact.create(
 	[	
-		{ first_name: 'Eric', 
-			last_name: 'Dupont', 
-			function: 'Maire', phone: '009393939', 
-			email: '3@gmail.com', 
-			password: '11111111', 
-			user_id: '1'}
-	]
-)
-Contact.create(
-	[	
-		{ first_name: 'Boris', 
-			last_name: 'Dupont', 
-			function: 'Maire', phone: '009393939', 
-			email: '4@gmail.com', 
+		{ first_name: 'Julien', 
+			last_name: 'Vallar', 
+			function: 'Ebéniste', phone: '0327653244', 
+			email: 'jivé@hotmail.fr', 
 			password: '11111111', 
 			user_id: 1}
 	]
 )
+
 Contact.create(
 	[	
-		{ first_name: 'Rake', 
-			last_name: 'Dupont', 
-			function: 'Maire', phone: '009393939', 
-			email: '5@gmail.com', 
+		{ first_name: 'Mathieu', 
+			last_name: 'Carbonel', 
+			function: 'Taxi', phone: '0327653244', 
+			email: 'karbo@gmail.com', 
+			password: '11111111', 
+			user_id: 1}
+	]
+)
+
+Contact.create(
+	[	
+		{ first_name: 'Caroline', 
+			last_name: 'Foucault', 
+			function: 'Community manager', phone: '0232653244', 
+			email: 'caro.wcs@gmail.com', 
+			password: '11111111', 
+			user_id: 1}
+	]
+)
+
+Contact.create(
+	[	
+		{ first_name: 'Joao', 
+			last_name: 'Pinto', 
+			function: 'Epicier', phone: '0232653244', 
+			email: 'j.pinto@gmail.com', 
+			password: '11111111', 
+			user_id: 1}
+	]
+)
+
+Contact.create(
+	[	
+		{ first_name: 'Benoît', 
+			last_name: 'Favier', 
+			function: 'Carreleur', phone: '0232653244', 
+			email: 'benoit.f@gmail.com', 
+			password: '11111111', 
+			user_id: 1}
+	]
+)
+
+Contact.create(
+	[	
+		{ first_name: 'Jean', 
+			last_name: 'castel', 
+			function: 'Plombier', phone: '0232653244', 
+			email: 'J.castel@gmail.com', 
 			password: '11111111', 
 			user_id: 1}
 	]
