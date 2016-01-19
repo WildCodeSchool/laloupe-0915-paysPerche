@@ -35,7 +35,7 @@ class UsersController < ApplicationController
 
 	def postmail
 		send_mail(params)
-		redirect_to root_path
+		redirect_to user_contacts_path(current_user)
 	end
 
 	def share_contact

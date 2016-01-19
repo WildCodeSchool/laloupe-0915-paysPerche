@@ -12,12 +12,14 @@ class Contact < ActiveRecord::Base
        field :last_name
        field :email
        field :function
+       field :organisation
    end
    edit do
        field :first_name
        field :last_name
        field :email
        field :phone
+       field :organisation
        field :users
        field :password
        field :password_confirmation
@@ -28,8 +30,8 @@ class Contact < ActiveRecord::Base
        field :last_name
        field :email
        field :function
-       field :users
-        
+       field :organisation
+       field :users 
 
    end
  end
