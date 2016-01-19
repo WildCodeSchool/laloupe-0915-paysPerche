@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 	end
 
 	def mes_contacts
-		@contacts = current_user.contacts
+		@contacts = User.find(params[:id]).contacts
 		@users = User.all
 	end
 
@@ -35,12 +35,19 @@ class UsersController < ApplicationController
 
 	def postmail
 		send_mail(params)
-		redirect_to user_contacts_path(current_user)
+		redirect_to root_path
 	end
 
-	def share_contact
-		relations(params)
-		binding.pry
+	def share_contacts
+		users = users_to_share(params)
+		if users != nil && params[:contacts] != nil
+			contacts = contact_array(params)
+			users.each do |user|
+				user.contacts << contacts
+			end
+		else
+			render :mes_contacts
+		end
 		redirect_to user_contacts_path
 	end
 
