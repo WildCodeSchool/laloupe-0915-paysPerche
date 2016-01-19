@@ -1,10 +1,10 @@
 module UsersHelper
-	def is_admin
-		@user = current_user
-		if @user.is_admin == true
-			redirect_to rails_admin_path
-		end
-	end
+  def is_admin
+    @user = current_user
+    if @user.is_admin == true
+      redirect_to rails_admin_path
+    end
+  end
   
   def group_to_send(params)
     tab_users = []
@@ -46,37 +46,22 @@ module UsersHelper
     subject
   end
 
-  def contacts_to_share(params)
-    tab_contacts = []
-    params[:person].each do |k, v|
-      if v.include?("1")
-        tab_contacts << Contact.where(id: k)
-      end  
-    end
-    tab_contacts
-  end
-
-  def users_to_share(params)
-    tab_users = []
-    params[:person2].each do |k, v|
-      if v.include?("1")  
-        tab_users << Contact.where(id: k)
-      end  
-    end
-    tab_users
-  end
-
-  def relations(params)
-    contacts = contacts_to_share(params).flatten!
-    users = users_to_share(params).flatten!
-    users.find_each do |user|
-      user.contacts << contacts
-    end
-  end
-
   def qrcode
     url = url_for( :controller => 'contacts/registrations', :action => 'new' )
     RQRCode::QRCode.new(url).to_img.resize(200, 200).to_data_url
   end
+
+  def users_to_share(params)
+    params[:persons].map {|k, v|
+      if v == "1"
+        User.find(k.to_i)
+      end
+      }.compact
+  end
+
+  def contact_array(params)
+    params[:contacts].map {|i| Contact.find(i.to_i)}
+  end
+
 
 end

@@ -3,8 +3,8 @@
     <div class="col-sm-12 col-md-12 main">
       <h2 class="sub-header">Mes contacts</h2>
       <div class="table-responsive">
-        <%= form_tag("/users/sharecontact") do %>
-          <%= form_for :person do |f| %>
+        <%= form_tag("sharecontacts") do %>
+          <%= form_for :persons do |f| %>
             <table class="table table-striped">
               <thead>
                 <tr>
@@ -18,7 +18,8 @@
               <tbody>
                 <% @contacts.each do |contact| %>
                   <tr>
-                    <td><%= f.check_box contact.email %></td>
+                    <td>
+                      <%= check_box_tag "contacts[]", contact.id %></td>
                     <td><%= contact.first_name %></td>
                     <td><%= contact.last_name %></td>
                     <td><%= contact.function %></td>
@@ -27,7 +28,7 @@
                 <% end %>
               </tbody>
             </table>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Partage de contatc</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Partager un contact</button>
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -36,7 +37,7 @@
                     <h4 class="modal-title" id="exampleModalLabel">Choisir un user</h4>
                   </div>
                   <div class="modal-body">
-                    <%= form_for :person2 do |f| %>
+                    <form>
                     <table class="table table-striped">
                       <thead>
                         <tr>
@@ -49,7 +50,6 @@
                       </thead>
                       <tbody>
                         <% @users.each do |user| %>
-
                           <tr>
                             <td><%= f.check_box user.id %></td>
                             <td><%= user.first_name %></td>
@@ -60,11 +60,10 @@
                         <% end %>
                       </tbody>
                     </table>
-                    <% end %>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <%= link_to "Envoyer le(s) contact(s)", share_contact_path, class: "btn btn-primary" %>
+                    <%= f.submit "Envoyer le(s) contact(s)", class: "btn btn-primary" %>
                   </div>
                 </div>
               </div>

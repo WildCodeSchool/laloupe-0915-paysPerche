@@ -1,5 +1,5 @@
 class Contact < ActiveRecord::Base
-	has_and_belongs_to_many :users
+  has_and_belongs_to_many :user, -> { uniq }
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -12,14 +12,12 @@ class Contact < ActiveRecord::Base
        field :last_name
        field :email
        field :function
-       field :organisation
    end
    edit do
        field :first_name
        field :last_name
        field :email
        field :phone
-       field :organisation
        field :users
        field :password
        field :password_confirmation
@@ -30,8 +28,8 @@ class Contact < ActiveRecord::Base
        field :last_name
        field :email
        field :function
-       field :organisation
-       field :users 
+       field :users
+        
 
    end
  end
