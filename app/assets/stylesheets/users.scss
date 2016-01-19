@@ -11,6 +11,11 @@
         text-align: center;
   }
 }
+.qrcode{
+  img{
+    width: 100%
+  }
+}
 .placeholder {
   font-size: 40px;
   margin-bottom: 10px;
@@ -23,21 +28,7 @@
     font-size: 50%;
   }
 }
-.colorprofil{
-  color: #AD791A;
-}
-.colorqrcode {
-  color: orange;
-}
-.colorcontact{
-  color: blue;
-}
-.colordeco{
-  color: green;
-}
-.coloradmin{
-  color: red;
-}
+
 span {
   font-size: 25px;
 }
@@ -54,4 +45,28 @@ span {
   width: 100px;
   margin-top: 10px;
  }
+}
+/* desktop all large screen > 976px */
+.colorprofil{
+  color: #AD791A;
+}
+.colorqrcode {
+  color: orange;
+}
+.colorcontact{
+  color: blue;
+}
+.colordeco{
+  color: green;
+}
+.coloradmin{
+  color: red;
+}
+.panel-header{
+        text-align: center;
+  }
+.qrcode{
+  img{
+    width: 100%
+  }
 }

@@ -13,13 +13,12 @@
         </h3>
         <p><%= @user.email %></p>
       </div>
-      <div class = "test"
         <div class="row panel panel-body">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
             <% if current_user.is_admin? %>
-            <%= link_to user_contacts_path do %>
+            <%= link_to rails_admin_path do %>
             <div class ='coloradmin'>
-              <i class="fa fa-qrcode img-responsive"></i>
+              <i class="fa fa-wrench img-responsive"></i>
               <span>Administration</span>
             </div>
             <% end %>
@@ -28,16 +27,33 @@
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
             <%= link_to user_contacts_path do %>
             <div class ='colorprofil'>
-              <i class="fa fa-qrcode img-responsive"></i>
+              <i class="fa fa-user img-responsive"></i>
               <span>Mon profil</span>
             </div>
             <% end %>
           </div>
-          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
-            <%= link_to user_contacts_path do %>
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 qrcode">
+            <%= link_to "#" do %>
             <div class ='colorqrcode'>
               <i class="fa fa-qrcode img-responsive"></i>
-              <span>Ma carte de visite</span>
+              <span data-toggle="modal" data-target="#myModal">Ma carte de visite</span>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    <%= image_tag @qr %>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
             <% end %>
           </div>

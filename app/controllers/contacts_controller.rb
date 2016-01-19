@@ -19,7 +19,6 @@ class ContactsController < ApplicationController
 	end
 	
 	def create
-		binding.pry
 		@contact = current_user.contacts.build(contact_params)
 		if @contact.save
 			redirect_to root_path
@@ -39,6 +38,6 @@ class ContactsController < ApplicationController
 
 	private
 	def contact_params
-		params.require(:contact).permit(:first_name, :last_name, :function, :phone, :email, :password, :note, :user_id)
+		params.require(:contact).permit(:first_name, :last_name, :function, :phone, :email, :password, :note, :user_id, :organisation)
 	end
 end
