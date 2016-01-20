@@ -29,6 +29,9 @@ html, body {
 }
 @media screen and (max-width: 976px)
 {
+/*  .panel-body{
+  text-align: left;
+}*/
   body {
   	/*background-color: #4BA90F;*/
   	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -164,7 +167,6 @@ h2 {
     margin-top: 50px;
     text-align: center;
   }
-  body {
-    text-align: center;
-  }
-  
+/*.panel-body{
+  text-align: center;
+}*/
