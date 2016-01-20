@@ -24,6 +24,9 @@
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
               <li class="active"><%= link_to "Accueil", root_path %></li>
+              <li> <%= link_to "Menu", user_path(current_user) %></li>
+
+              <li> <%= link_to "Envoyer un mail groupé", mailgroupe_path %></li>
               <li><%= link_to "Mes contacts", user_contacts_path(current_user) %></li>
               <% if current_user.is_admin? %>
                 <li><%= link_to "Administration", rails_admin_path %></li>
