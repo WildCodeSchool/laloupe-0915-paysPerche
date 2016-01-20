@@ -26,9 +26,9 @@
               <li class="active"><%= link_to "Accueil", root_path %></li>
               <li> <%= link_to "Menu", user_path(current_user) %></li>
 
-              <li> <%= link_to "Envoyer un mail groupé", mailgroupe_path %></li>
               <li><%= link_to "Mes contacts", user_contacts_path(current_user) %></li>
               <% if current_user.is_admin? %>
+                <li> <%= link_to "Envoyer un mail groupé", mailgroupe_path %></li>
                 <li><%= link_to "Administration", rails_admin_path %></li>
               <% end %>
               <li class="dropdown">
@@ -46,7 +46,13 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <div class="container">
+    <div class="container index_user">
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
     <%= yield %>
     <%= render "layouts/footer" %>
     </div>
