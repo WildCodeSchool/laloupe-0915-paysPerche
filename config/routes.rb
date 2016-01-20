@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'users#index'
   post '/users/:id/sharecontacts' => 'users#share_contacts', as: :share_contacts
   get '/users/:id/contacts' => 'users#mes_contacts', as: 'user_contacts'
-  get 'users/:id/mailgroupe' => 'users#mailgroupe', as: 'mailgroupe'
+  get '/mailgroupe' => 'users#mailgroupe', as: 'mailgroupe'
   post 'users/mailgroupe' => 'users#postmail', as: "postmail"
   
   devise_for :users
