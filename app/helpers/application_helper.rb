@@ -4,7 +4,7 @@ module ApplicationHelper
     if @user.is_admin == true
       redirect_to rails_admin_path
     else
-      redirect_to root_path, alert: "Vous n'avez pas les autorisations réquises pour effectuer cette action"
+      redirect_to root_path, alert: "Vous n'avez pas les autorisations requises pour effectuer cette action"
     end
   end
 end
