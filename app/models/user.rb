@@ -1,14 +1,14 @@
 class User < ActiveRecord::Base
-	has_and_belongs_to_many :contacts
+  has_and_belongs_to_many :contacts, -> { uniq }
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
-   after_create :notify_by_email
+  #after_create :notify_by_email
 
- rails_admin do
+  rails_admin do
    list do
        field :first_name
        field :last_name
@@ -22,6 +22,7 @@ class User < ActiveRecord::Base
        field :first_name
        field :last_name
        field :phone
+       field :function
    end
 
    show do
@@ -32,10 +33,10 @@ class User < ActiveRecord::Base
        field :contacts
 
    end
- end
-
-  private
-  def notify_by_email
-    ContactMailer.new_register(self).deliver_now
   end
+
+  # private
+  #   def notify_by_email
+  #     ContactMailer.new_register(self).deliver_now
+  #   end
 end

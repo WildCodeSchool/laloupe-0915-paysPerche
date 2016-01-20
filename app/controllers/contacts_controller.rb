@@ -19,7 +19,6 @@ class ContactsController < ApplicationController
 	end
 	
 	def create
-		binding.pry
 		@contact = current_user.contacts.build(contact_params)
 		if @contact.save
 			redirect_to root_path

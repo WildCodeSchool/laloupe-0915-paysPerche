@@ -16,114 +16,140 @@
  *= require font-awesome
  */
 
-body {
-	/*background-color: #4BA90F;*/
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	color: black;
+ .content {
+ 	height: 100vh;
+ 	width: 100vw;
+ }
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
 }
-
-.style_form {
-	font-size: 70px;
+.fa{
+  font-size: 45px;
 }
-
-/*.nav {
-	height: 120px;
-	font-size: 50px;
+@media screen and (max-width: 976px)
+{
+/*  .panel-body{
+  text-align: left;
 }*/
-.field {
-	background-color: #fff;
-  width: 75%;
-  margin: 30px auto;
-}
-<<<<<<< HEAD
-=======
-/*.bordure {
-	background-color: white;
-	height: 220px;
-}*/
->>>>>>> ef5dd660e96323e4aa4623683c0646cfb410dbf3
+  body {
+  	/*background-color: #4BA90F;*/
+  	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  	color: black;
+    background-image:url(.png);
+  }
 
-/*.navbar-brand{
-	font-size: 70px;
-}
-*/
-/*h2 {
-	font-size: 100px;
-	text-align: center;
-}*/
+  .style_form {
+  	font-size: 20px;
+  }
+  .bordure {
+  	height: 50px;
+  	font-size: 10px;
+  }
+  .field {
+  	background-color: #fff;
+    width: 75%;
+    margin: 30px auto;
+  }
 
-a {
-  margin-top: 30px;
-  font-size: 60px;
+ /* a {
+    font-size: 35px;
+  }*/
+
+  .navbar-toggle .icon-bar {
+      border-radius: 1px;
+      display: block;
+      height: 2px;
+      width: 20px;
+  }
+
+  button, html input[type=button], input[type=reset], input[type=submit]  {
+    border:5px solid #f2edf2;
+  /*  height: 200px;
+    font-size:60px;
+  	border-radius:70px;
+  	background-color:transparent;
+    padding:19px 150px;*/
+    display:inline-block;
+    cursor:pointer;
+    color: black;
+    font-family: Georgia;
+    text-decoration:none;
+  	position:relative;
+  	top:1px;
+
+  }
+  h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .field .fa{
+  	color: #4BA90F;
+  	padding: 0 10px;
+  }
+  .actions{
+  	text-align: center;
+  }
+  input, input:focus{
+  	/*border: 0;
+  	-moz-border: 0;
+  	-o-border: 0;
+  	-webkit-border: 0;*/
+  }
+  input[type=submit]{
+  	border:5px solid #f2edf2;
+  	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .new_contact input{
+  	width: 75%;
+  }
+  .user_info{
+  	width: 75%;
+  	margin: 0 auto;
+  	/*border: 1px solid black;*/
+  	border-bottom: 3px solid #B5AFAF;
+  	padding: 10px;
+  }
+  .user_info a:hover{
+  	text-align: none;
+  }
+  .user_show{
+  	background-color: #fff;
+  	font-size: 70px;
+  }
+  .user_avatar{
+  	width: 25%;
+  	margin: 0 auto;
+  }
+  .user_element{
+  	width: 70%;
+  	float: right;
+  	padding: 20px;
+  }
+  
+  .radius{
+  	border-radius: 50%;
+    border: 5px solid;
+    padding: 50px;
+  }
+  .row{
+
+  }
+  .user_bg{
+    background-image: url(Fond_chêne.png);
+    background-size: cover;
+    margin-top: 40px;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  
 }
 
-.navbar-toggle .icon-bar {
-    border-radius: 1px;
-    display: block;
-    height: 2px;
-    width: 22px;
-}
-button, html input[type=button], input[type=reset], input[type=submit]  {
-	border-radius:70px;
-	border:5px solid #f2edf2;
-	height: 200px;
-	display:inline-block;
-	cursor:pointer;
-	color: black;
-	font-family: Georgia;
-	font-size:60px;
-	padding:19px 150px;
-	text-decoration:none;
-	background-color:transparent;
-	position:relative;
-	top:1px;
-
-}
-.field .fa{
-	color: #4BA90F;
-	padding: 0 10px;
-}
-.actions{
-	text-align: center;
-}
-input, input:focus{
-	border: 0;
-	-moz-border: 0;
-	-o-border: 0;
-	-webkit-border: 0;
-}
-input[type=submit]{
-	border:5px solid #f2edf2;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-.new_contact input{
-	width: 75%;
-}
-<<<<<<< HEAD
-
-=======
-.user_info{
-	width: 75%;
-	margin: 0 auto;
-	/*border: 1px solid black;*/
-	border-bottom: 3px solid #B5AFAF;
-	padding: 10px;
-}
-.user_info a:hover{
-	text-align: none;
-}
-.user_show{
-	background-color: #fff;
-	font-size: 70px;
-}
-.user_avatar{
-	width: 25%;
-	margin: 0 auto;
-}
-.user_element{
-	width: 70%;
-	float: right;
-	padding: 20px;
+/*screen for computer*/
+.user_bg {
+    background-image: url(Fond_chêne.png);
+    background-size: cover;
+    margin-top: 40px;
 }
 .row.show.user_info.cvisite, .row.show.user_info.cvisite a {
     color: #F58B00;
@@ -131,18 +157,16 @@ input[type=submit]{
 .row.show.user_info.cvisite a:hover, .row.show.user_info.mcontact a:hover {
     text-decoration: none;
 }
-.radius{
-	border-radius: 50%;
-  border: 5px solid;
-  padding: 50px;
-}
 .row.show.user_info.mcontact a{
-	color: #EF0F0F;
+  color: #EF0F0F;
 }
-.user_bg {
-    background-image: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F01%2F2a%2F72%2F5b%2Fmoutiers-au-perche.jpg&f=1);
-    background-size: cover;
+.footer{
+  text-align: center;
 }
->>>>>>> ef5dd660e96323e4aa4623683c0646cfb410dbf3
-
-
+h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+/*.panel-body{
+  text-align: center;
+}*/

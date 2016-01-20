@@ -5,155 +5,48 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-User.create(
-	[	
-		{ first_name: 'Syyrius', 
+u1 = User.create(first_name: 'Syyrius', 
 			last_name: 'Jio', 
 			function: 'Administrateur', phone: '009393939', 
-			email: 'xx@xxxx.com', 
+			email: 'syyrius@gmail.com', 
 			password: '11111111', 
-			is_admin: 'true'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Boris', 
+			is_admin: 'true')
+
+u2 = User.create(first_name: 'Boris', 
 			last_name: 'Li', 
 			function: 'Maire', phone: '009393939', 
-			email: 'Boris@popof.com', 
+			email: 'boris.li@gmail.com', 
 			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Henri', 
-			last_name: 'Li', 
-			function: 'Deputé', phone: '009393939', 
-			email: 'Henri@li.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Ben', 
-			last_name: 'Zak', 
-			function: 'élu du Perche', phone: '009393939', 
-			email: 'benjamin@Zak.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Gonzalo', 
-			last_name: 'Perez', 
-			function: 'fonctionnaire', phone: '009393939', 
-			email: 'gonzalo@perez.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Javier', 
-			last_name: 'ederson', 
-			function: 'Maire', phone: '009393939', 
-			email: 'ederson@javier.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Paul', 
-			last_name: 'Walker', 
-			function: 'Maire', phone: '009393939', 
-			email: 'paul@walker.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'François', 
-			last_name: 'Hollande', 
-			function: 'Président', phone: '009393939', 
-			email: 'elysee@france.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Vladimir', 
-			last_name: 'Akinfeev', 
-			function: 'Maire', phone: '009393939', 
-			email: 'akinvlad@france.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
-User.create(
-	[	
-		{ first_name: 'Pierre', 
+			is_admin: 'false')
+
+c1 = Contact.create(first_name: 'Eric', 
 			last_name: 'Dupont', 
 			function: 'Maire', phone: '009393939', 
-			email: 'dupont@pierre.com', 
-			password: '11111111', 
-			is_admin: 'false'}
-	]
-)
+			email: 'eric.dupont@gmail.com', 
+			password: '11111111')
 
-Contact.create(
-	[	
-		{ first_name: 'Eric', 
-			last_name: 'Dupont', 
-			function: 'Maire', phone: '009393939', 
-			email: '1@gmail.com', 
-			password: '11111111', 
-			user_id: '1'}
-	]
-)
-
-Contact.create(
-	[	
-		{ first_name: 'Koklo', 
+c2 = Contact.create(first_name: 'Lucie', 
 			last_name: 'Kala', 
 			function: 'Maire', phone: '009393939', 
-			email: '2@gmail.com', 
-			password: '11111111', 
-			user_id: '1'}
-	]
-)
-Contact.create(
-	[	
-		{ first_name: 'Eric', 
-			last_name: 'Dupont', 
+			email: 'lucie.kala@gmail.com', 
+			password: '11111111')
+
+c3 = Contact.create(first_name: 'Just', 
+			last_name: 'Leblanc', 
 			function: 'Maire', phone: '009393939', 
-			email: '3@gmail.com', 
-			password: '11111111', 
-			user_id: '1'}
-	]
-)
-Contact.create(
-	[	
-		{ first_name: 'Boris', 
-			last_name: 'Dupont', 
+			email: 'Just.leblanc@gmail.com', 
+			password: '11111111')
+
+c4 = Contact.create(first_name: 'Boris', 
+			last_name: 'Martin', 
 			function: 'Maire', phone: '009393939', 
-			email: '4@gmail.com', 
-			password: '11111111', 
-			user_id: 1}
-	]
-)
-Contact.create(
-	[	
-		{ first_name: 'Rake', 
-			last_name: 'Dupont', 
+			email: 'boris.martin@gmail.com', 
+			password: '11111111')
+
+c5 = Contact.create(first_name: 'Rake', 
+			last_name: 'Nicolardot', 
 			function: 'Maire', phone: '009393939', 
-			email: '5@gmail.com', 
-			password: '11111111', 
-			user_id: 1}
-	]
-)
+			email: 'rake.nicolardot@gmail.com', 
+			password: '11111111')
+	
+u1.contacts = [c1, c2, c3, c4, c5]

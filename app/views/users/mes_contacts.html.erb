@@ -1,11 +1,76 @@
-mes contacts
-<div class ="row">
-  <form> 
-    <% @contacts.each do |contact| %>
-      <input type="checkbox" name="viennoiserie" value="croissant" checked><%= contact.first_name %> <%= contact.last_name %><br>
-      Téléphone: <%= contact.phone %> | email: <%= contact.email %>
-      <hr>
-    <% end %>
-  </form>
+<div class="container"> 
+  <div class ="row">
+    <div class="col-sm-12 col-md-12 main">
+      <h2 class="sub-header">Mes contacts</h2>
+      <div class="table-responsive">
+        <%= form_tag("sharecontacts") do %>
+          <%= form_for :persons do |f| %>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Prenom</th>
+                  <th>Nom</th>
+                  <th>Fontion</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @contacts.each do |contact| %>
+                  <tr>
+                    <td>
+                      <%= check_box_tag "contacts[]", contact.id %></td>
+                    <td><%= contact.first_name %></td>
+                    <td><%= contact.last_name %></td>
+                    <td><%= contact.function %></td>
+                    <td><%= contact.email %></td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Partager un contact</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Choisir un user</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Prenom</th>
+                          <th>Nom</th>
+                          <th>Fontion</th>
+                          <th>Email</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <% @users.each do |user| %>
+                          <tr>
+                            <td><%= f.check_box user.id %></td>
+                            <td><%= user.first_name %></td>
+                            <td><%= user.last_name %></td>
+                            <td><%= user.function %></td>
+                            <td><%= user.email %></td>
+                          </tr>
+                        <% end %>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <%= f.submit "Envoyer le(s) contact(s)", class: "btn btn-primary" %>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          <% end %>   
+        <% end %>      
+      </div>
+    </div>
+  </div>
 </div>
-

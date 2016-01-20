@@ -1,11 +1,11 @@
 class Contact < ActiveRecord::Base
-	has_and_belongs_to_many :users
+  has_and_belongs_to_many :user, -> { uniq }
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  after_create :notify_by_email
+  #after_create :notify_by_email
   rails_admin do
    list do
        field :first_name
@@ -39,11 +39,10 @@ class Contact < ActiveRecord::Base
   def generate_password
     o = [('a'..'z'), ('A'..'Z')].map { |i| i.to_a }.flatten
     self.password = (0...8).map { o[rand(o.length)] }.join
+    self.notify_by_email(self.password)
   end
 
-  private
-
-  def notify_by_email
-    ContactMailer.new_register(self).deliver_now
+  def notify_by_email(password)
+    ContactMailer.new_register(self, password).deliver_now
   end
 end
