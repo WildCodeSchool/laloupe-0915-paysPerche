@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
+	include ApplicationHelper
 	include UsersHelper
+	before_action :is_admin, only: [:mailgroupe, :postmail]
 	before_action :authenticate_user!
 	def index
 		@user = User.all
