@@ -1,40 +1,64 @@
-<div class="row">
-  <div class="col-sm-12 col-md-12 main panel panel-default">
-    <div class="row panel panel-header user_bg">
-      <%= image_tag @qr %>
-      <h3>
-        <% if @user.first_name.present? %>
-          <%= @user.first_name %>
-        <% end %>
-        <% if @user.last_name.present? %>
-          <%= @user.last_name %>
-        <% end %>
-      </h3>
-      <p><%= @user.email %></p>
-    </div>
-    <div class="row panel panel-body">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
-        <%= link_to user_contacts_path do %>
-        <div class ='colorprofil'>
-          <i class="fa fa-qrcode img-responsive"></i>
-          <span>Mon profil</span>
-        </div>
-        <% end %>
+<div class = "container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 main panel panel-default">
+      <div class="row panel panel-header user_bg">
+        <%= image_tag @qr %>
+        <h3>
+          <% if @user.first_name.present? %>
+            <%= @user.first_name %>
+          <% end %>
+          <% if @user.last_name.present? %>
+            <%= @user.last_name %>
+          <% end %>
+        </h3>
+        <p><%= @user.email %></p>
       </div>
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
-        <%= link_to user_contacts_path do %>
-        <div class ='colorqrcode'>
-          <i class="fa fa-qrcode img-responsive"></i>
-          <span>Ma carte de visite</span>
+      <div class = "test"
+        <div class="row panel panel-body">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
+            <% if current_user.is_admin? %>
+            <%= link_to user_contacts_path do %>
+            <div class ='coloradmin'>
+              <i class="fa fa-qrcode img-responsive"></i>
+              <span>Administration</span>
+            </div>
+            <% end %>
+            <% end %>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
+            <%= link_to user_contacts_path do %>
+            <div class ='colorprofil'>
+              <i class="fa fa-qrcode img-responsive"></i>
+              <span>Mon profil</span>
+            </div>
+            <% end %>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
+            <%= link_to user_contacts_path do %>
+            <div class ='colorqrcode'>
+              <i class="fa fa-qrcode img-responsive"></i>
+              <span>Ma carte de visite</span>
+            </div>
+            <% end %>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
+            <%= link_to user_contacts_path do %>
+            <div class="colorcontact">
+              <i class="fa fa-users img-responsive"></i>
+              <span>Mes contacts</span>
+            </div>
+            <% end %>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
+            <%= link_to destroy_user_session_path, method: :delete do %>
+            <div class = "colordeco">
+              <i class="fa fa-envelope-o img-responsive"></i>
+              <span>Deconnexion</span>
+            </div>
+            <% end %>
+          </div>
         </div>
-        <% end %>
-      </div>
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
-        <%= link_to user_contacts_path do %>
-        <div class="colorcontact">
-          <i class="fa fa-users img-responsive"></i>
-          <span>Mes contacts</span>
-        </div>
+<<<<<<< HEAD
         <% end %>
       </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
@@ -45,6 +69,9 @@
         </div>
         <% end %>
       </div>
+=======
+      <div>
+>>>>>>> b0ea6aaf2c809476710fda7326b0f6434e1d31b8
     </div>
   </div>
 </div>
