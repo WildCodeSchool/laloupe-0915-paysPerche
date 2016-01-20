@@ -5,9 +5,10 @@ class ContactMailer < ApplicationMailer
   #
   #   en.contact_mailer.new_register.subject
   #
-  def new_register(contact)
+  def new_register(contact, password)
   	@contact = contact
     @greeting = "Hi"
+    @password = password
 
     mail to: "#{@contact.email}", subject: "Confirmation de votre inscription"
   end
