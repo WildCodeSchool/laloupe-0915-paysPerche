@@ -2,9 +2,9 @@ class UsersController < ApplicationController
 	include ApplicationHelper
 	include UsersHelper
 	before_action :is_admin, only: [:mailgroupe, :postmail]
-	before_action :authenticate_user!
+	before_action :authenticate_user!, except: [:index]
 	def index
-		@user = User.all
+		
 	end
 
 	def mes_contacts
