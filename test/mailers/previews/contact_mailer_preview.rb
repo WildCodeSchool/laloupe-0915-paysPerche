@@ -6,4 +6,8 @@ class ContactMailerPreview < ActionMailer::Preview
     ContactMailer.new_register
   end
 
+  def mail_groupe
+    ContactMailer.mail_groupe
+  end
+
 end
