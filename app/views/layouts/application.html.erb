@@ -27,7 +27,7 @@
               <li> <%= link_to "Menu", user_path(current_user) %></li>
 
               <li><%= link_to "Mes contacts", user_contacts_path(current_user) %></li>
-              <% if current_user.is_admin? %>
+              <% if current_user.is_admin == true %>
                 <li> <%= link_to "Envoyer un mail groupé", mailgroupe_path %></li>
                 <li><%= link_to "Administration", rails_admin_path %></li>
               <% end %>
