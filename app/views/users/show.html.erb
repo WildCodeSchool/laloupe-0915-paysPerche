@@ -13,7 +13,7 @@
         </h3>
         <p><%= @user.email %></p>
       </div>
-        <div class="row panel panel-body">
+        <div class="row panel panel-body mobile_menu">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
             <% if current_user.is_admin? %>
             <%= link_to rails_admin_path do %>
@@ -22,16 +22,16 @@
               <span>Administration</span>
             </div>
             <% end %>
-            <% end %>
           </div>
-          <!-- <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
-            <%= link_to user_contacts_path do %>
-            <div class ='colorprofil'>
-              <i class="fa fa-user img-responsive"></i>
-              <span>Mon profil</span>
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
+            <%= link_to mailgroupe_path do %>
+            <div class ='colormailgroupé'>
+              <i class="fa fa-users img-responsive"></i>
+              <span>Envoyer un mail groupé</span>
             </div>
             <% end %>
-          </div> -->
+          </div>
+          <% end %>
           <div <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
             <%= link_to "#" do %>
             <div class ='colorqrcode'>
@@ -65,6 +65,9 @@
             </div>
             <% end %>
           </div>
+
+
+
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
             <%= link_to destroy_user_session_path, method: :delete do %>
             <div class = "colordeco">

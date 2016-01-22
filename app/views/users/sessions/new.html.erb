@@ -6,6 +6,7 @@
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, class: "form-control" %>
       </div>
+
       <div class="field">
         <%= f.label :mot_de_passe %><br />
         <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
@@ -22,6 +23,5 @@
         <%= f.submit "Log in", class: "btn btn-md btn-primary btn-block" %>
       </div>
     <% end %>
-    <%= render "contacts/shared/links" %>
   </div>
 </div>
