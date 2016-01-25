@@ -36,6 +36,11 @@ class ContactsController < ApplicationController
 		end
 	end
 
+	def destroy
+		@contact.destroy
+		redirect_to root_path
+	end
+
 	private
 	def contact_params
 		params.require(:contact).permit(:first_name, :last_name, :function, :phone, :email, :password, :note, :user_id)
