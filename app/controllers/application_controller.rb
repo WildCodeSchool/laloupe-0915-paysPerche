@@ -9,6 +9,12 @@ class ApplicationController < ActionController::Base
   #custom devise permited params
   before_filter :set_locale, :configure_devise_permitted_parameters, if: :devise_controller?
 
+  def authenticate_admin!
+    unless current_user.is_admin
+      redirect_to root_path, notice: "Désolé, vous n'êtes pas Admin."
+    end
+  end
+
   def set_locale
     I18n.locale = params[:fr]
   end

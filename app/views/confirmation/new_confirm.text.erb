@@ -1,3 +1,7 @@
-Confirmation#new_confirm
+Bonjour, <%= @user.first_name %>
+Confirmation de votre inscription
+Vos identifiants pour vous connecter:
+Indentifiant: <%= @user.email %>
+Votre mot de passe est : <%= @password %>
+<%=url_for( :controller => 'devise/sessions', :action => 'new' ) %>
 
-<%= @greeting %>, find me in app/views/confirmation/new_confirm.text.erb

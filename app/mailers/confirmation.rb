@@ -5,10 +5,11 @@ class Confirmation < ApplicationMailer
   #
   #   en.confirmation.new_confirm.subject
   #
-  def new_confirm
+  def new_confirm(user, password)
   	@greeting = "Bonjour"
-    @contact = Contact.last
-    @email = @contact.email
+    @user = user
+    @password = password
+    @email = @user.email
 
     mail to: "#{@email}", subject: "Vos accés à la plateforme du Pays Perche"
   end
