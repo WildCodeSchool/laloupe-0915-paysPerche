@@ -26,9 +26,9 @@
               <li class="active"><%= link_to "Accueil", root_path %></li>
 
               <li class="desctop_menu">
-                <%= link_to "#" do %>
+                <%= link_to user_path(current_user, :anchor => "qrcode") do %>
                 <div class ='desctop_menu'>
-                  <span data-toggle="modal" data-target="#myModal">Ma carte de visite</span>
+                  <span data-toggle="modal" data-target="#myModal" class="edem">Ma carte de visite</span>
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
