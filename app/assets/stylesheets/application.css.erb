@@ -1,0 +1,196 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_bootstrap.min
+ *= require_self
+ *= require font-awesome
+ */
+
+ .content {
+ 	height: 100vh;
+ 	width: 100vw;
+ }
+ .row.panel.panel-body.mobile_menu {
+      visibility: hidden;
+  }
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+}
+.fa{
+  font-size: 45px;
+}
+@media screen and (max-width: 976px)
+{
+/*  .panel-body{
+  text-align: left;
+}*/
+.row.panel.panel-body.mobile_menu {
+    visibility: visible;
+  }
+/*.desctop_menu {
+  display: none;
+}*/
+  body {
+  	/*background-color: #4BA90F;*/
+  	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  	color: black;
+    /*background-image:url(.png);*/
+  }
+
+  .style_form {
+  	font-size: 20px;
+  }
+  .bordure {
+  	height: 50px;
+  	font-size: 10px;
+  }
+  .field {
+  	background-color: #fff;
+    width: 75%;
+    margin: 30px auto;
+  }
+
+ /* a {
+    font-size: 35px;
+  }*/
+
+  .navbar-toggle .icon-bar {
+      border-radius: 1px;
+      display: block;
+      height: 2px;
+      width: 20px;
+  }
+
+  button, html input[type=button], input[type=reset], input[type=submit]  {
+    border:5px solid #f2edf2;
+  /*  height: 200px;
+    font-size:60px;
+  	border-radius:70px;
+  	background-color:transparent;
+    padding:19px 150px;*/
+    display:inline-block;
+    cursor:pointer;
+    color: black;
+    font-family: Georgia;
+    text-decoration:none;
+  	position:relative;
+  	top:1px;
+
+  }
+  h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .field .fa{
+  	color: #4BA90F;
+  	padding: 0 10px;
+  }
+  .actions{
+  	text-align: center;
+  }
+  input, input:focus{
+  	/*border: 0;
+  	-moz-border: 0;
+  	-o-border: 0;
+  	-webkit-border: 0;*/
+  }
+  input[type=submit]{
+  	border:5px solid #f2edf2;
+  	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .new_contact input{
+  	width: 75%;
+  }
+  .user_info{
+  	width: 75%;
+  	margin: 0 auto;
+  	/*border: 1px solid black;*/
+  	border-bottom: 3px solid #B5AFAF;
+  	padding: 10px;
+  }
+  .user_info a:hover{
+  	text-align: none;
+  }
+  .user_show{
+  	background-color: #fff;
+  	font-size: 70px;
+  }
+  .user_avatar{
+  	width: 25%;
+  	margin: 0 auto;
+  }
+  .user_element{
+  	width: 70%;
+  	float: right;
+  	padding: 20px;
+  }
+  
+  .radius{
+  	border-radius: 50%;
+    border: 5px solid;
+    padding: 50px;
+  }
+  .row{
+
+  }
+  .user_bg{
+    background-image: url(fond_chene.png);
+    background-size: cover;
+    margin-top: 50px;
+    /*margin-left: -30px;
+    margin-right: -30px;*/
+  }
+  
+}
+
+/*screen for computer*/
+.user_bg {
+    background-image: url(fond_chene.png);
+    background-size: cover;
+    margin-top: 40px;
+}
+.row.show.user_info.cvisite, .row.show.user_info.cvisite a {
+    color: #F58B00;
+}
+.row.show.user_info.cvisite a:hover, .row.show.user_info.mcontact a:hover {
+    text-decoration: none;
+}
+.row.show.user_info.mcontact a{
+  color: #EF0F0F;
+}
+.footer{
+  text-align: center;
+}
+h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+.qrcode{
+  width: 100%;
+}
+
+/*.session_bg{
+  background-size: cover;
+  background-image: url(<%= asset_path 'fond_chene.png' %>);
+  height: 800px;
+}*/
+.session_bg{
+  box-shadow: 2px black left;
+  background-color: beige;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+}

@@ -19,7 +19,6 @@ class ContactsController < ApplicationController
 	end
 	
 	def create
-		binding.pry
 		@contact = current_user.contacts.build(contact_params)
 		if @contact.save
 			redirect_to root_path
@@ -35,6 +34,11 @@ class ContactsController < ApplicationController
 		else
 			render 'edit', notice: "\#{@contact.first_name}\" n'a pas été modifié"
 		end
+	end
+
+	def destroy
+		@contact.destroy
+		redirect_to root_path
 	end
 
 	private

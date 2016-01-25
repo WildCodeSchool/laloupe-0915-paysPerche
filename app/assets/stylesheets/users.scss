@@ -1,23 +1,52 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@media screen and (max-width: 976px)
+{
 .panel{
+  border: none;
   .panel-header{
         text-align: center;
   }
 }
+.qrcode{
+  img{
+    width: 100%
+  }
+}
 .placeholder {
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-shadow: 0 1px 2px;
   img {
     display: inline-block;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
   }
   i.fa.fa-envelope-o.img-responsive, i.fa.fa-users.img-responsive, i.fa.fa-qrcode.img-responsive, i.fa.fa-wrench.img-responsive {
-    font-size: 300%;
+    font-size: 50%;
   }
 }
+
+span {
+  font-size: 20px;
+}
+.fa{
+  border-radius: 50%;
+  border: 5px solid;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+#monBlocConteneur { 
+  width: 100%;
+ }
+ img {
+  width: 100px;
+  margin-top: 10px;
+ }
+}
+/* desktop all large screen > 976px */
 .colorprofil{
   color: #AD791A;
 }
@@ -25,18 +54,41 @@
   color: orange;
 }
 .colorcontact{
-  color: red;
+  color: blue;
 }
 .colordeco{
   color: green;
 }
-span {
-  font-size: 60px;
-  margin-left: 50px;
+.coloradmin{
+  color: red;
 }
-.fa{
-  border-radius: 50%;
-  border: 5px solid;
-  padding: 15px;
-  margin-bottom: 15px;
+.panel-header{
+        text-align: center;
+  }
+.qrcode{
+  img{
+    width: 100%
+  }
+}
+/*.index_user {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}*/
+.index_user img {
+    width: 90%;
+}
+.index_image{
+  text-align: center;
+}
+.index_image img {
+  width: 90%;
+}
+.user_bg{
+  img{
+    margin-top: 25px;
+  }
+}
+.modal-backdrop{
+  z-index: 0 !important;
 }
