@@ -13,7 +13,7 @@
         </h3>
         <p><%= @user.email %></p>
       </div>
-        <div class="row panel panel-body">
+        <div class="row panel panel-body mobile_menu">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
             <% if current_user.is_admin? %>
             <%= link_to rails_admin_path do %>
@@ -36,10 +36,10 @@
             <%= link_to "#" do %>
             <div class ='colorqrcode'>
               <i class="fa fa-qrcode img-responsive"></i>
-              <span data-toggle="modal" data-target="#myModal">Ma carte de visite</span>
+              <span data-toggle="modal" data-target="#myModal2">Ma carte de visite</span>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
