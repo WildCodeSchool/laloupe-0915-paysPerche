@@ -1,0 +1,8 @@
+<div class ="row">
+  <div class="col-sm-12 col-md-12">
+    <%= form_for ([@contact, @contact.notes.build]) do |f| %>
+      <%= f.text_area :content, label: "Ajouter une note personnalisée", class: "form-control" %>
+      <%= f.submit "Ajouter", class: "btn btn-group pull-right" %>
+    <% end %>
+  </div>
+</div>

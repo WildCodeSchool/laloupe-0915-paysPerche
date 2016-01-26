@@ -13,6 +13,7 @@
                   <th>Nom</th>
                   <th>Fontion</th>
                   <th>Email</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -24,6 +25,11 @@
                     <td><%= contact.last_name %></td>
                     <td><%= contact.function %></td>
                     <td><%= contact.email %></td>
+
+                    <td><%= link_to contact_path(contact.id) do %>
+                      <i class="fa fa-comment">Ajouter une note</i>
+                    <% end %>
+                    </td>
                   </tr>
                 <% end %>
               </tbody>
