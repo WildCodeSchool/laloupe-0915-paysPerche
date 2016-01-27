@@ -1,4 +1,3 @@
-<div class = "container">
   <div class="row">
     <div class="col-sm-12 col-md-12 main panel panel-default">
       <div class="row panel panel-header user_bg">
@@ -13,6 +12,7 @@
         </h3>
         <p><%= @user.email %></p>
       </div>
+      <div class="container">
         <div class="row panel panel-body mobile_menu">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 placeholder">
             <% if current_user.is_admin? %>
@@ -75,6 +75,7 @@
           </div>
         </div>
       <div>
+    </div>
     </div>
   </div>
 </div>
