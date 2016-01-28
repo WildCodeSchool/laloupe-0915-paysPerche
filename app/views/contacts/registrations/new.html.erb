@@ -6,39 +6,39 @@
       <%= form_for(resource, as: resource_name, url: create_contact_path(params[:id])) do |f| %>
         <%= devise_error_messages! %>
         <div class="row">
-          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-            <i class="fa fa-user"></i><%= f.text_field :first_name, :placeholder => "Prénom" %>
+          <div class="col-xs-12 col-sm-12 col-sm-offset-1 col-md-8 col-md-offset-2 custom_inline">
+            <%= f.text_field :first_name, :placeholder => "Prénom", class: "form-control" %>
           </div>
         </div>
         <div class="row">
-          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-            <i class="fa fa-user"></i><%= f.text_field :last_name, :placeholder => "Nom" %>
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 custom_inline">
+            <%= f.text_field :last_name, :placeholder => "Nom", class: "form-control" %>
           </div>
         </div>
         <div class="row">
-          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-            <i class="fa fa-briefcase"></i><%= f.text_field :function, :placeholder => "Titre", class: "form-control" %>
+          <div class=" col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 custom_inline">
+            <%= f.text_field :function, :placeholder => "Titre", class: "form-control" %>
           </div>
         </div>
         <div class="row">
-          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-            <i class="fa fa-briefcase"></i><%= f.text_field :organisation, :placeholder => "Structure / Entreprise" %>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-            <i class="fa fa-phone"></i><%= f.text_field :phone, :placeholder => "Téléphone" %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-            <i class="fa fa-envelope-o"></i><%= f.email_field :email, autofocus: true, :placeholder => "Mail" %>
+          <div class=" col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 custom_inline">
+            <%= f.text_field :organisation, :placeholder => "Structure / Entreprise", class: "form-control" %>
           </div>
         </div>
 
         <div class="row">
-          <div class="field col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 custom_inline">
+            <%= f.text_field :phone, :placeholder => "Téléphone", class: "form-control" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 custom_inline">
+            <%= f.email_field :email, autofocus: true, :placeholder => "Mail", class: "form-control" %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 custom_inline">
             Acceptez-vous les CGU  ? <input type="checkbox" />
           </div>
         </div>
