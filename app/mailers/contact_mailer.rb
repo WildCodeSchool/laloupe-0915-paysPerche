@@ -11,7 +11,7 @@ class ContactMailer < ApplicationMailer
     @greeting = "Hi"
     @password = password
 
-    mail to: "#{@contact.email}", subject: "Confirmation de votre inscription"
+    mail to: "#{@contact.email}", subject: "Confirmation de votre inscription | Perche 2.8"
   end
 
   def mail_groupe(contact, subject, body)
@@ -21,6 +21,6 @@ class ContactMailer < ApplicationMailer
     @body = body
     @greeting = "Hi"
 
-    mail to: "#{@contact.email}", subject: "#{@subject}"
+    mail to: "#{@contact.email}", subject: "#{@subject} | Perche 2.8"
   end
 end

@@ -2,7 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+.fa {
+  /*border-radius: 50%;
+  border: 3px solid;*/
+  padding: 5px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
 @media screen and (max-width: 976px)
 {
 .panel{
@@ -32,10 +38,16 @@
 span {
   font-size: 20px;
 }
-.fa{
+/*.fa{
   border-radius: 50%;
   border: 5px solid;
   padding: 15px;
+  margin-bottom: 15px;
+}*/
+.fa {
+  border-radius: 50%;
+  border: 3px solid;
+  padding: 5px;
   margin-bottom: 15px;
 }
 #monBlocConteneur { 
