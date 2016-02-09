@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 	include ApplicationHelper
 	include UsersHelper
-	before_action :is_admin, only: [:send_mail, :postmail]
+	before_action :is_admin, only: [:send_mail]
 	before_action :authenticate_user!, except: [:index]
 	def index
 		
@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 	end
 
 	def show
+    @url = url_for( :controller => 'contacts/registrations', :action => 'new' )
 		@qr = qrcode
 		@user = User.find(params[:id])
 		@contacts = current_user.contacts

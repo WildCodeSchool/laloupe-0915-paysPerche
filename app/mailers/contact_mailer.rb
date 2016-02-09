@@ -6,11 +6,13 @@ class ContactMailer < ApplicationMailer
   #   en.contact_mailer.new_register.subject
   #
   def new_register(contact, password)
-  	@contact = contact
+    @url = root_url
+    @contact = contact
+    @user = User.find_by(contact.user_id)
     @greeting = "Hi"
     @password = password
 
-    mail to: "#{@contact.email}", subject: "Confirmation de votre inscription"
+    mail to: "#{@contact.email}", subject: "Confirmation de votre inscription | Perche 2.8"
   end
 
   def mail_groupe(contact, subject, body)
@@ -20,6 +22,6 @@ class ContactMailer < ApplicationMailer
     @body = body
     @greeting = "Hi"
 
-    mail to: "#{@contact.email}", subject: "#{@subject}"
+    mail to: "#{@contact.email}", subject: "#{@subject} | Perche 2.8"
   end
 end

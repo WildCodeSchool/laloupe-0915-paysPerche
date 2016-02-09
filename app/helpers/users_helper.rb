@@ -16,7 +16,7 @@ module UsersHelper
     subject = email_subject(params)
 
     users.map do |user|
-      ContactMailer.mail_groupe(user, subject, message).deliver_later!
+      ContactMailer.mail_groupe(user, subject, message).deliver_now
     end
   end
 

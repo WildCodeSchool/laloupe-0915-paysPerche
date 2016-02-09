@@ -2,7 +2,8 @@
   <div class="row">
     <div class="col-sm-12 col-md-12 main panel panel-default">
       <div class="row panel panel-header user_bg">
-        <%= image_tag @qr %>
+        <p><%= image_tag @qr %></p>
+        <a href=<%= @url %>><%= @url %></a>
         <h3>
           <% if @user.first_name.present? %>
             <%= @user.first_name %>

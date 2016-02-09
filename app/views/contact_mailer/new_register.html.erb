@@ -20,7 +20,10 @@
                             <td class="padded" style="padding: 0;vertical-align: middle;padding-left: 56px;padding-right: 56px;word-break: break-word;word-wrap: break-word;">
                               
             <h3 style="font-style: normal;font-weight: 400;Margin-bottom: 0;Margin-top: 0;font-size: 16px;line-height: 24px;font-family: &quot;PT Serif&quot;,Georgia,serif;color: #788991;text-align: center;">Bonjour, <%= @contact.first_name %></h3>
-            <h1 style="font-style: normal;font-weight: 400;Margin-bottom: 0;Margin-top: 14px;font-size: 22px;line-height: 30px;font-family: Ubuntu,sans-serif;color: #3e4751;text-align: center;">confirmation de votre inscription</h1><p style="font-style: normal;font-weight: 400;Margin-bottom: 22px;Margin-top: 18px;font-size: 13px;line-height: 22px;font-family: &quot;PT Serif&quot;,Georgia,serif;color: #7c7e7f;"><span>Pour rappel votre identifiant est votre mail, et votre mot de passe est : <%= @password %>&nbsp;</span></p>
+            <h1 style="font-style: normal;font-weight: 400;Margin-bottom: 0;Margin-top: 14px;font-size: 22px;line-height: 30px;font-family: Ubuntu,sans-serif;color: #3e4751;text-align: center;">confirmation de votre inscription</h1><p style="font-style: normal;font-weight: 400;Margin-bottom: 22px;Margin-top: 18px;font-size: 13px;line-height: 22px;font-family: &quot;PT Serif&quot;,Georgia,serif;color: #7c7e7f;">
+            <p>Vous avez rencontré <%= @user.first_name %> <%= @user.last_name %>, <%= @user.function %><br />
+Ses coordonnées sont: <%= @user.email %>, <%= @user.phone %></p>
+            <span>Pour rappel votre identifiant est votre mail, et votre mot de passe est : <%= @password %>&nbsp;</span></p>
           
                             </td>
                           </tr>
@@ -46,7 +49,7 @@
                           </tr>
                         </tbody></table>
                       
-                        <table class="contents" style="border-collapse: collapse;border-spacing: 0;table-layout: fixed;width: 100%;">
+                        <!-- <table class="contents" style="border-collapse: collapse;border-spacing: 0;table-layout: fixed;width: 100%;">
                           <tbody><tr>
                             <td class="padded" style="padding: 0;vertical-align: middle;padding-left: 56px;padding-right: 56px;word-break: break-word;word-wrap: break-word;">
                               
@@ -56,14 +59,14 @@ normal;font-weight: 400;Margin-bottom: 22px;Margin-top: 22px;font-size: 13px;lin
           
                             </td>
                           </tr>
-                        </tbody></table>
+                        </tbody></table> -->
                       
                         <table class="contents" style="border-collapse: collapse;border-spacing: 0;table-layout: fixed;width: 100%;">
                           <tbody><tr>
                             <td class="padded" style="padding: 0;vertical-align: middle;padding-left: 56px;padding-right: 56px;word-break: break-word;word-wrap: break-word;">
                               
             <div class="btn" style="Margin-bottom: 22px;Margin-top: 0;text-align: center;">
-              <!--[if !mso]--><a style="border-radius: 3px;display: inline-block;font-size: 14px;font-weight: 700;line-height: 24px;padding: 13px 35px 12px 35px;text-align: center;text-decoration: none !important;transition: opacity 0.2s ease-in;font-family: &quot;PT Serif&quot;,Georgia,serif;background-color: #4eaacc;color: #fff;" href="http://test.com" data-width="198" target="_blank">SE CONNECTER A LA PLATEFORME</a><!--[endif]-->
+              <!--[if !mso]--><a style="border-radius: 3px;display: inline-block;font-size: 14px;font-weight: 700;line-height: 24px;padding: 13px 35px 12px 35px;text-align: center;text-decoration: none !important;transition: opacity 0.2s ease-in;font-family: &quot;PT Serif&quot;,Georgia,serif;background-color: #4eaacc;color: #fff;" href=<%= @url %> data-width="198" target="_blank">SE CONNECTER A LA PLATEFORME</a><!--[endif]-->
             <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="http://test.com" style="width:268px" arcsize="7%" fillcolor="#4EAACC" stroke="f"><v:textbox style="mso-fit-shape-to-text:t" inset="0px,12px,0px,11px"><center style="font-size:14px;line-height:24px;color:#FFFFFF;font-family:Georgia,serif;font-weight:700;mso-line-height-rule:exactly;mso-text-raise:4px">READ THE FULL BLOG POST</center></v:textbox></v:roundrect><![endif]--></div>
           
                             </td>

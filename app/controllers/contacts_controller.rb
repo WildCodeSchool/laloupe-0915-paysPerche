@@ -5,12 +5,13 @@ class ContactsController < ApplicationController
 	end
 
 	def show
-		@contact = current_contact
+		@contact = Contact.find(params[:id])
+
 	end
 
 	def new
-		o = [('a'..'z'), ('A'..'Z')].map { |i| i.to_a }.flatten
-		@mdp = (0...8).map { o[rand(o.length)] }.join
+		# o = [('a'..'z'), ('A'..'Z')].map { |i| i.to_a }.flatten
+		# @mdp = (0...8).map { o[rand(o.length)] }.join
 		@contact = Contact.new
 	end
 

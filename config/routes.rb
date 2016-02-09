@@ -13,9 +13,13 @@ Rails.application.routes.draw do
   as :contact do
     get '/users/:id/contacts/new' => 'contacts/registrations#new', as: :new_contact
     post '/users/:id/contacts' => 'contacts/registrations#create', as: :create_contact
+    
   end
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :users
+  resources :contacts do
+    resources :notes
+  end
   
   # resources :contacts
   # post '/users/:id/contacts/new' => 'contacts#create'
