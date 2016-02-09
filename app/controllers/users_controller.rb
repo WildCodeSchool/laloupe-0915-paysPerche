@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 	end
 
 	def show
+    @url = url_for( :controller => 'contacts/registrations', :action => 'new' )
 		@qr = qrcode
 		@user = User.find(params[:id])
 		@contacts = current_user.contacts

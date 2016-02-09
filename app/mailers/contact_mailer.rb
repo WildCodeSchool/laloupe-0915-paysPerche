@@ -6,6 +6,7 @@ class ContactMailer < ApplicationMailer
   #   en.contact_mailer.new_register.subject
   #
   def new_register(contact, password)
+    @url = root_url
     @contact = contact
     @user = User.find_by(contact.user_id)
     @greeting = "Hi"
